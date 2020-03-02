@@ -1,0 +1,157 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #95989a;
+}
+
+.hero {
+ background-color: #f4f5f7;
+ padding-top: 74px;
+}
+.navbar {
+ margin-bottom: 159px;
+}
+.brand {
+ font-size: 20px;
+ font-weight: 700;
+ color: #95989a;
+}
+
+.socials-image {
+ color: #95989a;
+}
+
+.main-page {
+ padding-bottom: 151px;
+}
+.block1-subtitle {
+ margin-bottom: 14px;
+}
+.block1-title {
+ margin-bottom: 25px;
+}
+
+.block1-description {
+ margin-bottom: 16px;
+}
+
+.block1-title,
+.about-title {
+ font-size: 48px;
+ font-weight: 700;
+ color: #32325f;
+}
+
+.block1-description {
+ max-width: 516px;
+ line-height: 26px;
+}
+
+.block1-price_tag {
+ font-size: 48px;
+ font-weight: 400;
+ color: #32325f;
+}
+
+.block1-subtitle,
+.block1-description,
+.block1-price,
+.about_subtitle {
+ font-size: 20px;
+ font-weight: 400;
+}
+
+.btn-success,
+.btn-primary {
+ font-size: 20px;
+ font-weight: 700;
+ color: #ffffff;
+}
+
+.btn-success {
+ background-color: #2dce89;
+ padding: 20px 31px;
+ box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+ border-radius: 6px;
+ border: none;
+}
+
+.btn-primary {
+ background-color: #5e72e4;
+ padding: 21px 36px;
+ box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+ border-radius: 6px;
+ border: none;
+}
+
+.about {
+ background-color: #ffffff;
+ padding-top: 90px;
+ padding-bottom: 131px;
+}
+.about-title {
+ margin-bottom: 98px;
+}
+
+.card {
+ margin-bottom: 36px;
+}
+.card-description {
+ font-size: 16px;
+ font-weight: 400;
+}
+
+.section-3 {
+ background-color: #f4f5f7;
+ padding-top: 90px;
+ padding-bottom: 112px;
+}
+
+.section-3_subtitle {
+ margin-bottom: 13px;
+ font-size: 20px;
+ font-weight: 400;
+}
+
+.section-3-title {
+ margin-bottom: 63px;
+ color: #32325f;
+ font-size: 48px;
+ font-weight: 700;
+}
+
+.gallery-image {
+ max-width: 332px;
+ margin-bottom: 36px;
+}
+
+.footer {
+ padding: 78px 0 104px 0;
+ background-color: #32325f;
+}
+
+.info-text {
+ max-width: 258px;
+ margin-right: 140px;
+ color: #ffffff;
+}
+
+.info-text:last-child {
+ margin-right: 0;
+ max-width: 210px;
+}
+
+.info-text_title {
+ font-size: 24px;
+ font-weight: 700;
+ margin-bottom: 34px;
+}
+
+.info-text_description {
+ font-size: 16px;
+ font-weight: 700;
+}
