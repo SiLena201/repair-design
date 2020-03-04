@@ -1,6 +1,6 @@
 const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
-const sass = require("gulp-sass");
+const sass = require('gulp-sass');
 
 // Static server
  function bs() {
@@ -15,7 +15,7 @@ const sass = require("gulp-sass");
  watch("./js/*.js").on("change", browserSync.reload);
 };
 function serveSass() {
-  return src("./sass/*.scss")
+  return src("./sass/*.sass")
     .pipe(sass())
     .pipe(dest("./css"))
     .pipe(browserSync.stream());
