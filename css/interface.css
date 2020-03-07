@@ -6,3 +6,5 @@
   .button--primary {
     background-color: #E3B873;
     color: #fff; }
+  .button--outline {
+    border: 1px solid; }
