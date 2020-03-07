@@ -4,7 +4,10 @@
  flex-direction: column
  justify-content: center
  padding-top: 90px
- background: $dark url('../img/main-bg.jpg') no-repeat center / cover
+ background: $dark url('../img/main-bg.jpg') 
+ background-repeat: no-repeat
+ background-position: center
+ background-size: cover
  height: 100vh
  color: $light
  &__content 
@@ -12,35 +15,43 @@
  &__text 
   max-width: 500px
   font-size: 22px
+ &__button 
+   margin-right: 20px
+ &__instagram 
+  position: absolute
+  left: 0
+  max-width: 80px
+  height: 100%
  &__scroll-down 
   position: absolute
   left: 0
-  buttom: 0
+  bottom: 0
   display: flex
   justify-content: center
   align-items: center
   min-width: 247px
-  min-height: 37px
+  min-height: 97px
+  font-family: 'Yeseva One'
+  font-weight: normal
+  font-size: 12px
   background-color: $dark
   text-transform: uppercase
   text-decoration: none
-  color: $primary
+  color: $light
+ &__scroll-down:hover 
+  background-color: $lighten
 .instagram
   display: flex
   justify-content: center
   align-items: center
   background-color: $dark
-  &__instagram 
-  position: absolute
-  left: 0
-  max-width: 80px
-  height: 100%
   &__link
    text-transform: uppercase
    text-decoration: none
-   color: $light
+   color: $primary
    transform: rotate(90deg)
-
+.instagram:hover 
+  background-color: $lighten
 .title 
   margin: 0
   font-family: 'Yeseva One', cursive

@@ -6,10 +6,17 @@
  z-index: 99
  background-color: $dark
  padding: 24px 0
+.header:hover
+ background-color: $lighten
 .menu
  display: flex
  justify-content: space-between
  align-items: center 
+ font-size: 13px
+ line-height: 15px
+ &__logo 
+   font-family: 'FuturaDemiC'
+   font-weight: 500
 .logo 
  color: $primary
  text-transform: uppercase
@@ -17,10 +24,16 @@
  &__item
   color: $light
   margin-right: 40px
+  font-family: 'FuturaBookC'
+  font-weight: normal
   text-decoration: none
   text-transform: uppercase
+ &__item:hover
+   color: $primary
 .phone 
  color: $primary
 .contacts
  &__phone 
   margin-right: 45px 
+  font-family: 'FuturaDemiC'
+  font-weight: 500
