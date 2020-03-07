@@ -329,11 +329,16 @@ template {
 
 .container {
   max-width: 1256px;
-  margin: auto;
-  padding: 24px 0; }
+  margin: auto; }
 
 .header {
-  background-color: #131313; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  z-index: 99;
+  background-color: #131313;
+  padding: 24px 0; }
 
 .menu {
   display: flex;
@@ -355,6 +360,35 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.hero {
+  position: relative;
+  padding-top: 100px;
+  background: #131313 url("../img/main-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #131313; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    max-width: 80px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E3B873;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0; }
+
+*, *:before, *:after {
+  box-shadow: border-box; }
 
 body {
   font-family: 'Futura Book', sans-serif;
