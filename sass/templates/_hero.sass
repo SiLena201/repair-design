@@ -38,9 +38,12 @@
   text-transform: uppercase
   text-decoration: none
   color: $light
- &__scroll-down:hover 
-  background-color: $lighten
+ &__scroll-down:hover
+   color: $primary
 .instagram
+  position: absolute
+  top: 0
+  left: 0
   display: flex
   justify-content: center
   align-items: center
@@ -50,8 +53,8 @@
    text-decoration: none
    color: $primary
    transform: rotate(90deg)
-.instagram:hover 
-  background-color: $lighten
+  &__link:hover 
+    color: $light
 .title 
   margin: 0
   font-family: 'Yeseva One', cursive
