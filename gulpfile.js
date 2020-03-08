@@ -13,7 +13,7 @@ const autoprefixer = require('gulp-autoprefixer');
  });
  watch("./*.html").on("change", browserSync.reload);
  watch("./sass/**/*.sass", serveSass);
- watch("./sass/**/*.scss", serveSass);
+ watch("./sass/**/*.min.scss", serveSass);
  watch("./js/*.js").on("change", browserSync.reload);
 };
 function serveSass() {
