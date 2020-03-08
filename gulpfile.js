@@ -17,7 +17,7 @@ const autoprefixer = require('gulp-autoprefixer');
  watch("./js/*.js").on("change", browserSync.reload);
 };
 function serveSass() {
-  return src("./sass/**/*.sass", "./sass/**/*.scss")
+  return src("./sass/**/*.sass", "./sass/**/*.min.scss")
     .pipe(sass())
     .pipe(autoprefixer({
     cascade: false
