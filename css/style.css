@@ -351,6 +351,28 @@ template {
   width: 85%;
   margin: auto; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Futura Book', 'Futura Demi', sans-serif;
+  font-size: 14px; }
+
+.section-title {
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  text-align: center; }
+  .section-title__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__image::before, .section-title__image::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      margin: 0 10px;
+      background-color: #E3B873; }
+
 .header {
   position: fixed;
   top: 0;
@@ -412,6 +434,8 @@ template {
   .hero::before {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
@@ -487,10 +511,3 @@ template {
   line-height: 53px; }
   .title--primary {
     color: #E3B873; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Futura Book', 'Futura Demi', sans-serif;
-  font-size: 14px; }
