@@ -320,7 +320,7 @@ template {
 
 .button {
   padding: 13px 20px;
-  font-family: 'FuturaDemiC';
+  font-family: 'Futura PT Demi';
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
@@ -341,10 +341,7 @@ template {
     background-color: transparent;
     color: #fff; }
   .button--outline:hover {
-    background-color: #E3B873;
-    color: #fff;
-    box-shadow: 0px 5px 15px rgba(83, 83, 83, 0.2);
-    border: none; }
+    background-color: rgba(19, 19, 19, 0.4); }
 
 .container {
   max-width: 1256px;
@@ -389,7 +386,7 @@ body {
   font-size: 13px;
   line-height: 15px; }
   .menu__logo {
-    font-family: 'FuturaDemiC';
+    font-family: 'Futura PT Demi';
     font-weight: 500; }
 
 .logo {
@@ -399,7 +396,7 @@ body {
 .nav__item {
   color: #fff;
   margin-right: 40px;
-  font-family: 'FuturaBookC';
+  font-family: 'Futura Book';
   font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
@@ -413,7 +410,7 @@ body {
 
 .contacts__phone {
   margin-right: 45px;
-  font-family: 'FuturaDemiC';
+  font-family: 'Futura PT Demi';
   font-weight: 500; }
 
 .contacts__phone:hover {
