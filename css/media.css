@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 12px; }
+    font-size: 0.85rem; }
   .nav__item {
     margin-right: 1rem; } }
 
@@ -20,7 +20,7 @@
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 64rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
