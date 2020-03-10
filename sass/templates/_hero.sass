@@ -10,6 +10,7 @@
  background-size: cover
  height: 100vh
  color: $light
+ vertical-align: top
  &::before
    content: ''
    position: absolute
@@ -20,13 +21,20 @@
    background-color: rgba($dark, 0.7 )
  &__content 
   position: relative
-  max-width: 47.85rem
+  max-width: 30rem
   margin-left: 4.28rem
+ &__title
+   margin-bottom: 29px
  &__text 
   max-width: 500px
-  font-size: 1.57rem
+  font-size: 1.27rem
+  line-height: 133%
+  margin-bottom: 2.74rem
  &__button 
-   margin-right: 20px
+   margin-right: 14px
+   padding: 14px 24px
+   &--outline
+    padding: 13px 36px 
  &__instagram 
   position: absolute
   left: 0
@@ -39,23 +47,24 @@
   display: flex
   justify-content: center
   align-items: center
-  min-width: 17.6rem
-  min-height: 6.92rem
   font-family: 'Yeseva One'
   font-weight: normal
-  font-size: 0.857rem
+  font-size: 0.68rem
+  line-height: 60%
   background-color: $dark
   text-transform: uppercase
   text-decoration: none
   color: $light
+  padding: 27px 37px
   &::after
     content: ''
     background: url('../img/arrow.svg') no-repeat  center
-    width: 30px
-    height: 30px
-    border: 2px solid $primary
+    width: 24px
+    height: 24px
+    font-family: 'Yeseva One'
+    border: 1px solid $primary
     border-radius: 50%
-    margin-left: 12px
+    margin-left: 15px
  &__scroll-down:hover
    color: $primary
 .instagram
@@ -73,19 +82,22 @@
    text-decoration: none
    color: $primary
    transform: rotate(90deg)
-   line-height: 0.8
+   font-size: 0.85rem
+   line-height: 16px
    &:after
     content: ''
-    width: 50px
+    width: 40px
     height: 1px
     background-color: $primary
-    margin-left: 8px
+    margin-left: 12px
   &__link:hover 
     color: $light
 .title 
   margin: 0
   font-family: 'Yeseva One', cursive
-  font-size: 40px
-  line-height: 53px
+  font-weight: normal
+  font-size: 2.35rem
+  line-height: 1.3
+  text-transform: uppercase
   &--primary
     color: $primary
