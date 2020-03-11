@@ -547,11 +547,11 @@ img {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 0.85rem; }
+    font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 0.98rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
   .nav {
     display: none; }
   .hero__instagram {
@@ -567,7 +567,7 @@ img {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 64rem; }
+    font-size: 1.91rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
@@ -580,6 +580,6 @@ img {
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 520px), (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
