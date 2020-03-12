@@ -319,11 +319,11 @@ template {
   display: none; }
 
 .button {
-  padding: 8px 15px;
+  padding: 0.57rem 1.07rem;
   font-family: 'Futura PT Demi';
   font-weight: 400;
   font-size: 0.9rem;
-  line-height: 15px;
+  line-height: 1.07rem;
   text-align: center;
   border: none;
   border-radius: 2px;
@@ -355,7 +355,7 @@ html {
   font-size: 14px; }
 
 body {
-  font-family: 'Futura Book', 'Futura Demi', sans-serif;
+  font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
 img {
@@ -420,7 +420,7 @@ img {
 .contacts__phone {
   margin-right: 35px;
   font-family: 'Futura PT Demi';
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.14rem; }
 
@@ -456,14 +456,15 @@ img {
     margin-bottom: 29px; }
   .hero__text {
     max-width: 500px;
+    font-family: 'Futura Book';
     font-size: 1.571rem;
     line-height: 2.142rem;
     margin-bottom: 2.74rem; }
   .hero__button {
     margin-right: 13px;
-    padding: 14px 19px; }
+    padding: 1.21rem 1.857rem; }
     .hero__button--outline {
-      padding: 13px 32px; }
+      padding: 1.21rem 2.28rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -478,7 +479,7 @@ img {
     align-items: center;
     font-family: 'Yeseva One';
     font-weight: normal;
-    font-size: 0.78rem;
+    font-size: 0.857rem;
     line-height: 100%;
     background-color: #131313;
     text-transform: uppercase;
@@ -508,6 +509,7 @@ img {
   .instagram__link {
     display: flex;
     align-items: center;
+    font-family: 'Futura PT Demi';
     text-transform: uppercase;
     text-decoration: none;
     color: #E3B873;
@@ -614,18 +616,26 @@ img {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.91rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    max-width: 26.75rem;
+    font-size: 1.91rem;
+    line-height: 2.5rem; }
+  .hero {
+    width: 100%; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 31.25rem; }
+    .hero__text {
+      max-width: 26.75rem;
+      font-size: 1.29rem;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      display: block;
+      min-width: 22.86rem;
+      width: 100%;
+      margin-bottom: 1.85rem;
+      font-size: 1.08rem;
+      line-height: 1.25rem; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__scroll-down {

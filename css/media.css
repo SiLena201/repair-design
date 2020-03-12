@@ -29,18 +29,26 @@
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.91rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    max-width: 26.75rem;
+    font-size: 1.91rem;
+    line-height: 2.5rem; }
+  .hero {
+    width: 100%; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 31.25rem; }
+    .hero__text {
+      max-width: 26.75rem;
+      font-size: 1.29rem;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      display: block;
+      min-width: 22.86rem;
+      width: 100%;
+      margin-bottom: 1.85rem;
+      font-size: 1.08rem;
+      line-height: 1.25rem; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__scroll-down {
