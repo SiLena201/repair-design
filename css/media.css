@@ -18,7 +18,7 @@
     align-items: center; }
   .types__card {
     margin-bottom: 4.28rem; }
-  __text {
+  .card__text {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
