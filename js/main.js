@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function(event){
  }
 
  modalBtn.forEach(element => {
-  element.addEventListener('click', switchNodal)
+  element.addEventListener('click', switchNodal);
  });
 
- closeBtn.addEventListener('click', switchNodal)
+ closeBtn.addEventListener('click', switchNodal);
  
 });
