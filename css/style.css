@@ -516,22 +516,22 @@ img {
     align-items: center;
     font-family: 'Yeseva One';
     font-weight: normal;
-    font-size: 0.69rem;
-    line-height: 72%;
+    font-size: 0.857rem;
+    line-height: 130%;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    padding: 27px 36.6px; }
+    padding: 2.857rem 3.428rem; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow.svg") no-repeat center;
-      width: 24px;
-      height: 24px;
+      width: 29px;
+      height: 29px;
       font-family: 'Yeseva One';
       border: 1px solid #E3B873;
       border-radius: 50%;
-      margin-left: 14px; }
+      margin-left: 12px; }
   .hero__scroll-down:hover {
     color: #E3B873; }
 
@@ -710,7 +710,7 @@ img {
     .hero__content {
       max-width: 31.25rem; }
     .hero__text {
-      max-width: 23rem;
+      mi-width: 23rem;
       font-size: 1.29rem;
       margin-bottom: 2.28rem; }
     .hero__button {
