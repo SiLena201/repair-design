@@ -319,9 +319,9 @@ template {
   display: none; }
 
 .button {
-  padding: 0.58rem 1.15rem;
+  padding: 0.68rem 1.15rem;
   font-family: 'Futura PT Demi';
-  font-size: 0.76rem;
+  font-size: 0.92rem;
   line-height: 1.07rem;
   text-align: center;
   border: none;
@@ -430,9 +430,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.8rem;
-  line-height: 0.92rem;
-  font-weight: 400; }
+  font-size: 1rem;
+  line-height: 1.14rem;
+  font-weight: normal; }
   .menu__logo {
     font-family: 'Futura PT Demi';
     font-weight: 500; }
@@ -492,16 +492,16 @@ img {
   .hero__title {
     margin-bottom: 19px; }
   .hero__text {
-    max-width: 30.71rem;
+    max-width: 38.71rem;
     font-family: 'Futura Book';
-    font-size: 1.272rem;
-    line-height: 1.7rem;
+    font-size: 1.57rem;
+    line-height: 2rem;
     margin-bottom: 2.74rem; }
   .hero__button {
     margin-right: 13px;
-    padding: 1rem 1.4rem; }
+    padding: 1.2rem 1.637rem; }
     .hero__button--outline {
-      padding: 0.9rem 2.3rem; }
+      padding: 1.05rem 2.5rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -551,8 +551,8 @@ img {
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg);
-    font-size: 0.8rem;
-    line-height: 17px; }
+    font-size: 1rem;
+    line-height: 1.14rem; }
     .instagram__link:after {
       content: '';
       width: 39px;
@@ -566,8 +566,8 @@ img {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
-  font-size: 2.38rem;
-  line-height: 3rem;
+  font-size: 2.857rem;
+  line-height: 3.78rem;
   text-transform: uppercase; }
   .title--primary {
     color: #E3B873; }
@@ -631,7 +631,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(19, 19, 19, 0.6);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center; }
   .modal__dialog {
