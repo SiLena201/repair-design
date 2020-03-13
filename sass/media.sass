@@ -18,10 +18,32 @@
   align-items: center
  .types
   &__card 
-   margin-bottom: 4.28rem
+   margin-bottom: 5rem
  .card
   &__text 
     margin-left: 0
+ .design
+  background-color: #252525
+  color: #ffffff
+  &__section-description
+   max-width: 28rem
+  &__card 
+   margin-bottom: 14rem
+ .section-title
+   align-items: center
+ .card
+  &__text 
+    margin-left: 0
+    margin-top: -11.5rem
+  &__pricetag
+    padding: 0.9rem 4.25rem 0.8rem 3.8rem
+    box-shadow: rgba(#ffffff, 0.2)
+    transition: box-shadow 0.3s
+  &__pricetag:hover 
+    box-shadow: none
+ .card__item 
+   &--none
+     display: none
 @media screen and ( max-width: 570px )
  .contacts 
   &__phone

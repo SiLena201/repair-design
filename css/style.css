@@ -587,40 +587,111 @@ img {
   position: relative;
   margin: 0 auto;
   margin-top: -9.3rem;
-  padding: 1.39rem 2.14rem;
-  max-width: 23.6rem;
+  padding: 1.4rem 2.24rem;
+  max-width: 23.57rem;
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .card__title {
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
-  font-size: 1.29rem;
-  line-height: 1.79rem;
+  font-size: 15px;
+  line-height: 20px;
   margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.3rem; }
 
 .card__list {
   margin: 0;
   margin-bottom: 2.5rem;
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 1.11rem;
   font-family: 'Futura Book';
   font-weight: normal;
   font-size: 1.07rem;
-  line-height: 1.79rem;
+  line-height: 1.75rem;
   color: #959595; }
 
 .card__pricetag {
   position: absolute;
   left: 0;
-  bottom: -1.79rem;
-  font-size: 1.128rem;
-  line-height: 1.78rem;
+  bottom: -1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.58rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;
-  padding: 1.214rem 2.6rem; }
+  padding: 1rem 2.2rem;
+  cursor: pointer; }
+
+.design {
+  background: #fff; }
+  .design__section-title {
+    margin-bottom: 2.5rem; }
+  .design__section-description {
+    margin-bottom: 2.58rem; }
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 50.92rem;
+  font-family: 'Futura Book', cursive;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.92rem;
+  text-transform: none; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -9.3rem;
+  padding: 1.4rem 2.24rem;
+  max-width: 23.57rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #131313; }
+
+.card__list {
+  margin: 0;
+  margin-bottom: 2.5rem;
+  padding: 0 0 0 1.11rem;
+  font-family: 'Futura Book';
+  font-weight: normal;
+  font-size: 1.07rem;
+  line-height: 1.75rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.95rem;
+  font-size: 1.25rem;
+  line-height: 1.58rem;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1.21rem 4.78rem 1.21rem 2.35rem; }
 
 .modal {
   position: fixed;
@@ -688,9 +759,29 @@ img {
     flex-direction: column;
     align-items: center; }
   .types__card {
-    margin-bottom: 4.28rem; }
+    margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design {
+    background-color: #252525;
+    color: #ffffff; }
+    .design__section-description {
+      max-width: 28rem; }
+    .design__card {
+      margin-bottom: 14rem; }
+  .section-title {
+    align-items: center; }
+  .card__text {
+    margin-left: 0;
+    margin-top: -11.5rem; }
+  .card__pricetag {
+    padding: 0.9rem 4.25rem 0.8rem 3.8rem;
+    box-shadow: rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s; }
+  .card__pricetag:hover {
+    box-shadow: none; }
+  .card__item--none {
+    display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
