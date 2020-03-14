@@ -328,6 +328,8 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   cursor: pointer; }
+  .button:focus {
+    outline: none; }
   .button--primary {
     background-color: #E3B873;
     color: #fff;
@@ -708,7 +710,7 @@ img {
 
 .modal {
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
