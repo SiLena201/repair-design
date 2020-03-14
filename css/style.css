@@ -500,8 +500,7 @@ img {
     margin-bottom: 2.74rem; }
   .hero__button {
     margin-right: 13px;
-    padding: 1.2rem 1.637rem;
-    cursor: pointer; }
+    padding: 1.2rem 1.637rem; }
     .hero__button--outline {
       padding: 1.05rem 2.5rem; }
   .hero__instagram {
@@ -704,7 +703,8 @@ img {
   text-transform: uppercase;
   background-color: #E3B873;
   color: #fff;
-  padding: 1.21rem 4.78rem 1.21rem 2.35rem; }
+  padding: 1.21rem 4.78rem 1.21rem 2.35rem;
+  cursor: pointer; }
 
 .modal {
   opacity: 0;
@@ -720,7 +720,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .modal__visible {
+  .modal--visible {
     opacity: 1;
     visibility: visible; }
   .modal__dialog {
