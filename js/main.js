@@ -28,7 +28,7 @@ $(document).ready(function () {
   
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
-    noSwiping: false,
+    allowTouchMove: false,
     pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
