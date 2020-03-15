@@ -390,6 +390,16 @@ template {
   width: 85%;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 30%; }
+  .col-50 {
+    width: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -405,10 +415,31 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #fff; }
   .section-title {
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
     text-align: center; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase;
+      line-height: 138.6%;
+      color: #E3B873; }
+    .section-title--word {
+      display: flex;
+      align-items: center; }
+      .section-title--word::after {
+        content: '';
+        width: 80px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -446,7 +477,7 @@ img {
 
 .nav__item {
   color: #fff;
-  margin-right: 2.1rem;
+  margin-right: 2.857rem;
   font-family: 'Futura Book';
   font-weight: normal;
   text-decoration: none;
@@ -460,9 +491,10 @@ img {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 35px;
+  margin-right: 3.21rem;
   font-family: 'Futura PT Demi';
-  font-weight: 500; }
+  font-weight: 500;
+  text-align: right; }
 
 .contacts__phone:hover {
   color: #fff; }
@@ -487,6 +519,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     position: relative;
     max-width: 40rem;
@@ -498,13 +539,16 @@ img {
     max-width: 38.71rem;
     font-family: 'Futura Book';
     font-size: 1.57rem;
-    line-height: 2rem;
-    margin-bottom: 2.74rem; }
+    line-height: 2.142rem;
+    margin-bottom: 2.92rem; }
   .hero__button {
     margin-right: 13px;
-    padding: 1.2rem 1.637rem; }
-    .hero__button--outline {
-      padding: 1.05rem 2.5rem; }
+    padding: 1.357rem 1.857rem 1.142rem 1.857rem;
+    font-weight: 500;
+    font-size: 0.92rem;
+    line-height: 1.07rem; }
+  .hero__button--outline {
+    padding: 1.187rem 2.4rem 1.05rem 2.4rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -520,21 +564,22 @@ img {
     font-family: 'Yeseva One';
     font-weight: normal;
     font-size: 0.857rem;
-    line-height: 130%;
+    line-height: 138.6%;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    padding: 2.857rem 3.428rem; }
+    padding: 2.457rem 3.4rem 2.385rem 3.428rem;
+    z-index: 3; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow.svg") no-repeat center;
-      width: 29px;
-      height: 29px;
+      width: 1.71rem;
+      height: 1.71rem;
       font-family: 'Yeseva One';
       border: 1px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 0.857rem; }
   .hero__scroll-down:hover {
     color: #E3B873; }
 
@@ -570,10 +615,57 @@ img {
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   font-size: 2.857rem;
-  line-height: 3.78rem;
+  line-height: 3.785rem;
   text-transform: uppercase; }
   .title--primary {
     color: #E3B873; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2rem;
+    font-family: 'Futura Book', cursive; }
+    .swiper-slide__text:nth-child(3), .swiper-slide__text:nth-child(4) {
+      margin-bottom: 5.07rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    font-weight: normal;
+    font-size: 1.07rem;
+    line-height: 1.428rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  buttom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px;
+  outline: none; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 8px; }
 
 .section-title__heading {
   font-family: 'Yeseva One', cursive;
@@ -585,14 +677,6 @@ img {
 
 .types__section-image {
   margin-bottom: 2.214rem; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__text {
   position: relative;
@@ -655,14 +739,6 @@ img {
   font-size: 1.4rem;
   line-height: 1.92rem;
   text-transform: none; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
 
 .card__text {
   position: relative;
@@ -728,7 +804,7 @@ img {
     position: relative;
     max-width: 36.36rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.357rem 3.5rem 1.928rem;
+    padding: 2.28rem 3.5rem;
     color: #fff; }
   .modal__close {
     position: absolute;
@@ -744,6 +820,7 @@ img {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     font-size: 1.357rem;
+    line-height: 1.857rem;
     text-align: center;
     margin: 0;
     margin-bottom: 2.428rem; }
@@ -765,7 +842,7 @@ img {
   .nav__item {
     margin-right: 0.98rem; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .nav {
     display: none; }
   .hero__instagram {
@@ -773,6 +850,29 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-50 {
+    flex-basis: 100%;
+    margin-bottom: 5rem; }
+  .section-title {
+    min-width: 306px; }
+    .section-title__heading {
+      align-self: start;
+      font-size: 1.7rem;
+      line-height: 138%; }
+    .section-title--word::after {
+      display: none; }
+    .section-title__text {
+      font-size: 1.50rem;
+      line-height: 130%; }
+  .swiper-slide__text {
+    flex-basis: 50%; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.68rem;
+    margin-right: 12px; }
+  .swiper-slide__value {
+    font-size: 1.27rem;
+    line-height: 1.428rem; }
   .card {
     margin-bottom: 5rem; }
     .card__text {
@@ -786,6 +886,26 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-50 {
+    flex-basis: 100%; }
+  .section-title {
+    min-width: 306px; }
+    .section-title__heading {
+      align-self: start;
+      font-size: 1.5rem;
+      line-height: 138%; }
+    .section-title__text {
+      font-size: 1.30rem;
+      line-height: 130%; }
+  .swiper-slide__text {
+    flex-basis: 50%; }
+  .swiper-slide__heading {
+    font-size: 1.185rem;
+    line-height: 1.58rem;
+    margin-right: 12px; }
+  .swiper-slide__value {
+    font-size: 1.27rem;
+    line-height: 1.428rem; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
@@ -833,7 +953,8 @@ img {
     .hero__scroll-down {
       display: none; }
     .hero__content {
-      max-width: 31.25rem; }
+      max-width: 31.25rem;
+      margin-left: 0; }
     .hero__text {
       mi-width: 23rem;
       font-size: 1.29rem;
@@ -845,6 +966,21 @@ img {
       margin-bottom: 1.85rem;
       font-size: 1.08rem;
       line-height: 1.25rem; }
+  .col-50 {
+    width: 90%;
+    margin-bottom: 5rem; }
+  .section-title {
+    align-items: flex-start; }
+    .section-title__text {
+      max-width: 25.5rem;
+      margin-bottom: 2.25rem; }
+    .section-title__heading {
+      font-size: 1.83rem;
+      line-height: 138.6%;
+      margin-bottom: 0.91rem; }
+    .section-title__value {
+      font-size: 1.16rem;
+      line-height: 135.8%; }
   .types .section-title {
     font-size: 1.66rem;
     line-height: 138.6%; }
@@ -890,5 +1026,7 @@ img {
       line-height: 138.6%; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
+  .hero__content {
+    margin-left: 0; }
   .hero__scroll-down {
     display: none; } }

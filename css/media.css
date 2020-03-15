@@ -4,7 +4,7 @@
   .nav__item {
     margin-right: 0.98rem; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .nav {
     display: none; }
   .hero__instagram {
@@ -12,6 +12,29 @@
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-50 {
+    flex-basis: 100%;
+    margin-bottom: 5rem; }
+  .section-title {
+    min-width: 306px; }
+    .section-title__heading {
+      align-self: start;
+      font-size: 1.7rem;
+      line-height: 138%; }
+    .section-title--word::after {
+      display: none; }
+    .section-title__text {
+      font-size: 1.50rem;
+      line-height: 130%; }
+  .swiper-slide__text {
+    flex-basis: 50%; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.68rem;
+    margin-right: 12px; }
+  .swiper-slide__value {
+    font-size: 1.27rem;
+    line-height: 1.428rem; }
   .card {
     margin-bottom: 5rem; }
     .card__text {
@@ -25,6 +48,26 @@
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-50 {
+    flex-basis: 100%; }
+  .section-title {
+    min-width: 306px; }
+    .section-title__heading {
+      align-self: start;
+      font-size: 1.5rem;
+      line-height: 138%; }
+    .section-title__text {
+      font-size: 1.30rem;
+      line-height: 130%; }
+  .swiper-slide__text {
+    flex-basis: 50%; }
+  .swiper-slide__heading {
+    font-size: 1.185rem;
+    line-height: 1.58rem;
+    margin-right: 12px; }
+  .swiper-slide__value {
+    font-size: 1.27rem;
+    line-height: 1.428rem; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
@@ -72,7 +115,8 @@
     .hero__scroll-down {
       display: none; }
     .hero__content {
-      max-width: 31.25rem; }
+      max-width: 31.25rem;
+      margin-left: 0; }
     .hero__text {
       mi-width: 23rem;
       font-size: 1.29rem;
@@ -84,6 +128,21 @@
       margin-bottom: 1.85rem;
       font-size: 1.08rem;
       line-height: 1.25rem; }
+  .col-50 {
+    width: 90%;
+    margin-bottom: 5rem; }
+  .section-title {
+    align-items: flex-start; }
+    .section-title__text {
+      max-width: 25.5rem;
+      margin-bottom: 2.25rem; }
+    .section-title__heading {
+      font-size: 1.83rem;
+      line-height: 138.6%;
+      margin-bottom: 0.91rem; }
+    .section-title__value {
+      font-size: 1.16rem;
+      line-height: 135.8%; }
   .types .section-title {
     font-size: 1.66rem;
     line-height: 138.6%; }
@@ -129,5 +188,7 @@
       line-height: 138.6%; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
+  .hero__content {
+    margin-left: 0; }
   .hero__scroll-down {
     display: none; } }
