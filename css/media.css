@@ -4,21 +4,22 @@
   .nav__item {
     margin-right: 0.98rem; } }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 991px) {
   .nav {
     display: none; }
   .hero__instagram {
     display: none; }
-  .types .col {
-    flex-basis: 33%; }
-  .card__pricetag {
-    display: block;
-    width: 90%;
-    padding: 0.8rem 1rem; }
-  .design .col {
-    flex-basis: 33%; }
-  .card__pricetag {
-    display: block; } }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .card {
+    margin-bottom: 5rem; }
+    .card__text {
+      margin-left: 0; }
+    .card__pricetag {
+      display: block;
+      width: 70%;
+      padding: 0.99rem 1rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -84,16 +85,24 @@
       font-size: 1.08rem;
       line-height: 1.25rem; }
   .types .section-title {
-    font-size: 1.83rem;
+    font-size: 1.66rem;
     line-height: 138.6%; }
     .types .section-title__heading {
-      margin-bottom: 1.21rem; }
+      margin-bottom: 1.41rem; }
   .types .design__section-image {
     margin-bottom: 3.3rem; }
   .types .card {
     margin-bottom: 6rem; }
     .types .card__text {
-      max-width: 22.5rem; }
+      max-width: 22.5rem;
+      font-weight: normal;
+      padding: 1.75rem 3.41rem 3.083rem 2.583rem; }
+    .types .card__title {
+      font-size: 1.25rem;
+      line-height: 138.6%; }
+    .types .card__list {
+      font-size: 1.083rem;
+      line-height: 169.8%; }
   .design .section-title {
     font-size: 1.83rem;
     line-height: 138.6%; }
@@ -104,13 +113,20 @@
   .design .section-description {
     max-width: 25.5rem;
     font-size: 1.25rem;
-    line-height: 135%; }
+    line-height: 135.8%; }
   .design .card {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     font-size: 1.25rem;
-    line-height: 138%; }
+    line-height: 138.6%;
+    padding: 0.916rem 4.25rem 0.66rem 1.66rem; }
     .design .card__text {
-      max-width: 22.5rem; } }
+      max-width: 22.5rem;
+      margin-top: -12rem;
+      padding: 1.5rem 3.41rem 2.183rem 2.583rem; }
+    .design .card__title {
+      margin-bottom: 1.083rem;
+      font-size: 1.25rem;
+      line-height: 138.6%; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__scroll-down {

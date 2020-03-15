@@ -4,7 +4,7 @@
  .nav 
   &__item
    margin-right: 0.98rem
-@media screen and ( max-width: 990px )
+@media screen and ( max-width: 991px )
  .nav 
   display: none
  .hero
@@ -12,20 +12,18 @@
    display: none
   &__content
     margin-left: 
- .types
-  .col
-    flex-basis: 33%
+ .row
+  flex-direction: column
+  align-items: center
  .card
+   &__card 
+   margin-bottom: 5rem
+   &__text 
+    margin-left: 0
    &__pricetag 
-     display: block
-     width: 90%
-     padding: 0.8rem 1rem
- .design
-   .col
-     flex-basis: 33%
- .card
-   &__pricetag 
-     display: block
+    display: block
+    width: 70%
+    padding: 0.99rem 1rem
 @media screen and ( max-width: 760px )
  .row
   flex-direction: column
@@ -95,16 +93,24 @@
      line-height: 1.25rem
  .types
    .section-title
-     font-size: 1.83rem
+     font-size: 1.66rem
      line-height: 138.6%
      &__heading
-       margin-bottom: 1.21rem
+       margin-bottom: 1.41rem
    .design__section-image
      margin-bottom: 3.3rem
    .card 
      margin-bottom: 6rem
      &__text
        max-width: 22.5rem
+       font-weight: normal
+       padding: 1.75rem 3.41rem 3.083rem 2.583rem
+     &__title
+       font-size: 1.25rem
+       line-height: 138.6%
+     &__list
+       font-size: 1.083rem
+       line-height: 169.8%
  .design
    .section-title
      font-size: 1.83rem
@@ -116,15 +122,22 @@
    .section-description
      max-width: 25.5rem
      font-size: 1.25rem
-     line-height: 135%
+     line-height: 135.8%
    .card
-     margin-bottom: 7rem
+     margin-bottom: 5rem
      &__text
        max-width: 22.5rem
+       margin-top: -12rem
+       font-weight: 
+       padding: 1.5rem 3.41rem 2.183rem 2.583rem
+     &__title
+       margin-bottom: 1.083rem  
+       font-size: 1.25rem
+       line-height: 138.6%
      &__pricetag
      font-size: 1.25rem
-     line-height: 138%     
-
+     line-height: 138.6%     
+     padding: 0.916rem 4.25rem 0.66rem 1.66rem
 @media screen and ( max-width: 520px ), ( max-height: 520px )
   .hero 
     &__scroll-down
