@@ -18,9 +18,10 @@
   .section-title {
     min-width: 306px; }
     .section-title__heading {
-      align-self: start;
       font-size: 1.7rem;
       line-height: 138%; }
+      .section-title__heading--margin {
+        align-items: flex-start; }
     .section-title--word::after {
       display: none; }
     .section-title__text {
@@ -53,9 +54,10 @@
   .section-title {
     min-width: 306px; }
     .section-title__heading {
-      align-self: start;
       font-size: 1.5rem;
       line-height: 138%; }
+      .section-title__heading--margin {
+        align-items: flex-start; }
     .section-title__text {
       font-size: 1.30rem;
       line-height: 130%; }
@@ -131,18 +133,20 @@
   .col-50 {
     width: 90%;
     margin-bottom: 5rem; }
-  .section-title {
-    align-items: flex-start; }
-    .section-title__text {
-      max-width: 25.5rem;
-      margin-bottom: 2.25rem; }
-    .section-title__heading {
-      font-size: 1.83rem;
-      line-height: 138.6%;
-      margin-bottom: 0.91rem; }
-    .section-title__value {
-      font-size: 1.16rem;
-      line-height: 135.8%; }
+  .section-title__text {
+    max-width: 25.5rem;
+    margin-bottom: 2.25rem; }
+  .section-title__heading {
+    font-size: 1.83rem;
+    line-height: 138.6%;
+    margin-bottom: 0.91rem; }
+    .section-title__heading--margin {
+      align-items: flex-start; }
+  .section-title__value {
+    font-size: 1.16rem;
+    line-height: 135.8%; }
+  .swiper-slide__image {
+    height: auto; }
   .types .section-title {
     font-size: 1.66rem;
     line-height: 138.6%; }
