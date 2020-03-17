@@ -369,7 +369,8 @@ template {
 
 .policy__checkbox {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  margin-bottom: -0.1rem; }
   .policy__checkbox:checked + .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
@@ -870,24 +871,24 @@ img {
     line-height: 1.857rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.98rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
     margin-bottom: 3.428rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: -0.4rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end;
     font-family: 'Futura PT Demi';
     font-weight: 500;
-    font-size: 0.92rem;
-    line-height: 1.28rem;
+    font-size: 0.928rem;
+    line-height: 1.285rem;
     text-transform: uppercase;
-    padding: 1.157rem 3rem 1.157rem 3.2rem; }
+    padding: 1.157rem 3.3rem 1.157rem 3.3rem; }
 
 @media screen and (max-width: 1200px) {
   html {
