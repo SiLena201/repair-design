@@ -1,43 +1,47 @@
 .types
- &__section-title
-.section-title
-  &__heading
-    font-family: 'Yeseva One', cursive
-    font-weight: normal
-    font-size: 1.285rem
-    line-height: 1.785rem
-    text-transform: uppercase
-    margin-bottom: 0.928rem
-.types__section-image
+ &__heading
+  font-family: 'Yeseva One', cursive
+  font-weight: normal
+  font-size: 20px
+  line-height: 28px
+  text-transform: uppercase
+  margin-bottom: 0.928rem
+.types
+ &__image
   margin-bottom: 2.214rem
-.card 
+ .row
+  display: flex
+  justify-content: space-between
+.card
  &__text
   position: relative
   margin: 0 auto
   margin-top: -9.3rem
-  padding: 1.78rem 2.28rem 3.92rem 2.21rem 
+  padding: 1.6rem 2.285rem 3.328rem 0
   max-width: 23.57rem
   background-color: $light
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
- &__title 
+ &__title
   font-family: 'Yeseva One', cursive
   font-weight: normal
   font-size: 1.285rem
   line-height: 1.785rem
   margin-top: 0
-  margin-bottom: 0.928rem
- &__list 
-  margin: 0
-  margin-bottom: 3.928rem
+  margin-bottom: -0.9rem
+  margin-left: 2.21rem
+ &__list
+  margin: 1.4rem
+  margin-left: 0.5rem
+  margin-bottom: 1.928rem
   font-family: 'Futura Book'
   font-weight: normal
-  font-size: 1.285rem
-  line-height: 1.785rem
+  font-size: 1.061rem
+  line-height: 1.6rem
   color: $secondary
  &__pricetag
   position: absolute
   left: 0
-  bottom: -1.2rem
+  bottom: -1.85rem
   font-size: 1.285rem
   line-height: 1.785rem
   font-family: 'Yeseva One', cursive
@@ -48,6 +52,6 @@
   color: $light
   box-shadow: 0px 5px 15px rgba($light, 0.2)
   transition: box-shadow 0.3s
-  padding: 1.214rem 1.45rem
+  padding: 1.01rem 2.85rem
   cursor: pointer
 

@@ -11,105 +11,34 @@
   &__instagram
    display: none
   &__content
-    margin-left: 
+    margin-left:
  .row
-  flex-direction: column
+  flex-direction: column 
   align-items: center
- .col-50
-   flex-basis: 100%
-   margin-bottom: 5rem
- .section-title
-   min-width: 306px
-   &__heading
-    font-size: 1.7rem
-    line-height: 138%
-    &--margin
-     align-items: flex-start
-   &--word
-     &::after
-       display: none
-   &__text
-     font-size: 1.50rem
-     line-height: 130%
- .swiper-slide
-   &__text
-     flex-basis: 50%
-   &__heading
-     font-size: 1.285rem
-     line-height: 1.68rem
-     margin-right: 12px
-   &__value
-     font-size: 1.27rem
-     line-height: 1.428rem 
- .card
-   &__card 
-   margin-bottom: 5rem
-   &__text 
-    margin-left: 0
-   &__pricetag 
-    display: block
-    width: 70%
-    padding: 0.99rem 1rem
-@media screen and ( max-width: 760px )
- .row
-  flex-direction: column
-  align-items: center
- .col-50
-   flex-basis: 100%
- .section-title
-   min-width: 306px
-   &__heading
-    font-size: 1.5rem
-    line-height: 138%
-    &--margin
-     align-items: flex-start
-   &__text
-     font-size: 1.30rem
-     line-height: 130%
- .swiper-slide
-   &__text
-     flex-basis: 50%
-   &__heading
-     font-size: 1.185rem
-     line-height: 1.58rem
-     margin-right: 12px
-   &__value
-     font-size: 1.27rem
-     line-height: 1.428rem 
+ .projects-slide
+  margin-top: 2rem
  .types
-  &__card 
-   margin-bottom: 5rem
  .card
-  &__text 
-    margin-left: 0
+  margin-bottom: 4.91rem
+  &__text
+   margin-bottom: 0
+   padding-bottom: 4.2rem
+   padding-top: 1.4rem
+   margin-top: -9.8rem
+  &__title
+    margin-bottom: 0.5rem
+  &__list
+    margin: 0
+    margin-bottom: 0
+  &__item
+   margin-bottom: 0.5rem
   &__pricetag
-    display: block
-    width: 70%
-    padding: 0.99rem 1rem
- .design
-  background-color: #252525
-  color: #ffffff
-  &__section-description
-   max-width: 28rem
-  &__card 
-   margin-bottom: 14rem
- .section-title
-   align-items: center
- .card
-  &__text 
-    margin-left: 0
-    margin-top: -11.5rem
-  &__pricetag
-    display: block
-    width: 70%
-    padding: 0.99rem 1rem
-    box-shadow: 0px 5px 15px rgba(#ffffff, 0.2)
-    transition: box-shadow 0.3s
-  &__pricetag:hover 
-    box-shadow: none
- .card__item 
-   &--none
-     display: none
+    bottom: -1.5rem
+ .col-30
+  flex-basis: 32%
+
+@media screen and ( max-width: 760px )
+  .hero
 @media screen and ( max-width: 570px )
  .contacts 
   &__phone
@@ -140,71 +69,97 @@
      margin-bottom: 1.85rem
      font-size: 1.08rem
      line-height: 1.25rem
+ .row
+  flex-direction: column 
+  align-items: center
  .col-50
    width: 90%
-   margin-bottom: 5rem
- .section-title 
-   &__text
-     max-width: 25.5rem
-     margin-bottom: 2.25rem
+ .projects-title
    &__heading
      font-size: 1.83rem
      line-height: 138.6%
-     margin-bottom: 0.91rem
-     &--margin
-      align-items: flex-start
-   &__value
+     margin-bottom: 1.83rem
+   &__text
+     font-size: 1.16rem
+     line-height: 158.48%
+     margin-bottom: 3rem
+     max-width: 25rem
+ .projects-slide
+  &__text 
+   flex-basis: 50%
+   margin-right: 2.58rem
+   margin-top: 0
+   &:nth-child(3), &:nth-child(4)
+    margin-bottom: 5rem
+  &__heading
     font-size: 1.16rem
-    line-height: 135.8%
- .swiper-slide__image
-   height: auto
+    line-height: 138.6%
+    margin-bottom: 0.91rem
+  &__value
+    margin-bottom: 2.25rem
+  &__image
+  margin-top: 2.91rem
  .types
-   .section-title
-     font-size: 1.66rem
-     line-height: 138.6%
-     &__heading
-       margin-bottom: 1.41rem
-   .design__section-image
-     margin-bottom: 3.3rem
-   .card 
-     margin-bottom: 6rem
-     &__text
-       max-width: 22.5rem
-       font-weight: normal
-       padding: 1.75rem 3.41rem 3.083rem 2.583rem
-     &__title
-       font-size: 1.25rem
-       line-height: 138.6%
-     &__list
-       font-size: 1.083rem
-       line-height: 169.8%
- .design
-   .section-title
-     font-size: 1.83rem
-     line-height: 138.6%
-     &__heading
-       margin-bottom: 1.25rem
-   .types__section-image
-     margin-bottom: 1.91rem
-   .section-description
-     max-width: 25.5rem
-     font-size: 1.25rem
-     line-height: 135.8%
-   .card
-     margin-bottom: 5rem
-     &__text
-       max-width: 22.5rem
-       margin-top: -12rem
-       font-weight: 
-       padding: 1.5rem 3.41rem 2.183rem 2.583rem
-     &__title
-       margin-bottom: 1.083rem  
-       font-size: 1.25rem
-       line-height: 138.6%
-     &__pricetag
-     font-size: 1.25rem
-     line-height: 138.6%     
-     padding: 0.916rem 4.25rem 0.66rem 1.66rem
+  &__heading
+    font-size: 1.83rem
+    line-height: 138.6%
+  &__image
+    margin-bottom: 3.3rem
+ .card
+  margin-bottom: 4.91rem
+  &__text
+   width: 80%
+   margin-left: 0
+   margin-top: -11.9rem
+   padding: 1.65rem 0 2.8rem 0.380rem
+  &__title
+    font-size: 1.25rem
+    line-height: 138.6%
+    margin-bottom: 0.43rem
+  &__list
+    font-size: 1.083rem
+    line-height: 169.8%
+  &__item
+  &__pricetag
+    display: block
+    font-size: 1.25rem
+    line-height: 138.6%
+    padding: 0.9rem 2.45rem
+    bottom: -1.6rem
+ .design 
+  background-color: #131313 
+  color: #ffffff
+  &-section__heading
+   font-size: 1.83rem
+   line-height: 138.6%
+   color: #ffffff
+  &-section__description
+   font-size: 1.25rem
+   line-height: 135.84%
+   max-width: 25.5rem
+  &__text 
+    margin-top: -11.8rem
+    padding: 1.5rem 3.41rem 3.24rem 2.583rem
+  &__title 
+    font-size: 1.25rem
+    line-height: 138.6% 
+    margin-bottom: 0.6rem
+  &__list 
+    font-size: 1.083rem
+    line-height: 169.8%
+    padding-left: 1.5rem
+  &__pricetag 
+    font-size: 1.25rem
+    line-height: 138.6%
+    padding: 0.916rem 4.25rem 0.66rem 3.73rem
+    bottom: -1.6rem
+ .card
+   &__item
+     margin-bottom: 0.1rem
+     &--none
+       display: none
+
+  
 @media screen and ( max-width: 520px ), ( max-height: 520px )
   .hero 
     &__content

@@ -1,24 +1,48 @@
+.projects-title
+  &__heading
+    font-family: 'Yeseva One', cursive
+    font-weight: normal 
+    font-size: 1.928rem
+    line-height: 2.64rem
+    text-transform: uppercase
+    margin-bottom: 2.42rem 
+    margin-top: -8px
+  &__text
+     font-family: 'Futura Book', cursive
+     font-weight: normal
+     font-size: 1.285rem
+     line-height: 2.071rem
+     margin-bottom: 1rem
+.projects-slide
+  display: flex
+  flex-wrap: wrap
+  &__text 
+     display: flex
+     flex-direction: column
+     flex-basis: 50%
+     max-width: 12.14rem
+     margin-right: 2.857rem
+     margin-top: 1rem
+     &:nth-child(3), &:nth-child(4)
+      margin-bottom: 5.07rem
+  &__heading
+     font-family: 'Yeseva One', cursive
+     font-weight: normal
+     font-size: 1.28rem
+     line-height: 1.785rem
+     text-transform: uppercase
+     margin-bottom: 6px
+     color: $primary
+  &__value
+     font-family: 'Futura Book', cursive
+     font-weight: normal
+     font-size: 1.28rem
+     line-height: 1.428rem
+     color: $light
 .swiper
   &-slide
    display: flex
    flex-wrap: wrap
-   &__text
-     flex-basis: 50%
-     margin-bottom: 2rem
-     font-family: 'Futura Book', cursive
-     &:nth-child(3), &:nth-child(4)
-      margin-bottom: 5.07rem
-   &__heading
-     font-size: 1.285rem
-     line-height: 1.78rem
-     font-family: 'Yeseva One', cursive
-     color: $primary
-     text-transform: uppercase
-     margin-bottom: 0.64rem
-   &__value
-    font-weight: normal
-    font-size: 1.07rem
-    line-height: 1.428rem  
   &-pagination
    &-bullet
     background-color: rgba($light, 0.3)
