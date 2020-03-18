@@ -12,8 +12,19 @@
   .row {
     flex-direction: column;
     align-items: center; }
-  .projects-slide {
-    margin-top: 2rem; }
+  .projects-slide__text {
+    flex-basis: 38%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0; }
+    .projects-slide__text:nth-child(2) {
+      margin-right: 0; }
+    .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+      margin-right: 3.3rem; }
+    .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
+      margin-bottom: 5rem; }
+  .section-title--word::after {
+    display: none; }
   .card {
     margin-bottom: 4.91rem; }
     .card__text {
@@ -32,6 +43,19 @@
       bottom: -1.5rem; }
   .col-30 {
     flex-basis: 32%; } }
+
+@media screen and (max-width: 760px) {
+  .projects-slide__text {
+    flex-basis: 45%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0; }
+    .projects-slide__text:nth-child(2) {
+      margin-right: 0; }
+    .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+      margin-right: 2rem; }
+    .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
+      margin-bottom: 5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -66,7 +90,7 @@
     flex-direction: column;
     align-items: center; }
   .col-50 {
-    width: 90%; }
+    width: 100%; }
   .projects-title__heading {
     font-size: 1.83rem;
     line-height: 138.6%;
@@ -74,22 +98,29 @@
   .projects-title__text {
     font-size: 1.16rem;
     line-height: 158.48%;
-    margin-bottom: 3rem;
     max-width: 25rem; }
   .projects-slide {
-    margin-top: 2.91rem; }
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 2.25rem; }
     .projects-slide__text {
-      flex-basis: 50%;
-      margin-right: 2.58rem;
-      margin-top: 0; }
+      flex-basis: 38%;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0; }
+      .projects-slide__text:nth-child(2) {
+        margin-right: 0; }
+      .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+        margin-right: 3.3rem; }
       .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
         margin-bottom: 5rem; }
     .projects-slide__heading {
       font-size: 1.16rem;
       line-height: 138.6%;
-      margin-bottom: 0.91rem; }
+      margin-bottom: 0.83rem; }
     .projects-slide__value {
-      margin-bottom: 2.25rem; }
+      font-size: 1.16rem;
+      line-height: 1.583rem; }
   .types__heading {
     font-size: 1.83rem;
     line-height: 138.6%; }

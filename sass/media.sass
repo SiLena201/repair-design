@@ -15,8 +15,21 @@
  .row
   flex-direction: column 
   align-items: center
- .projects-slide
-  margin-top: 2rem
+ .projects-slide  
+  &__text 
+   flex-basis: 38%
+   margin-top: 0
+   margin-bottom: 1rem
+   padding: 0
+   &:nth-child(2)
+     margin-right: 0
+   &:nth-child(1), &:nth-child(3)
+     margin-right: 3.3rem
+   &:nth-child(3), &:nth-child(4)
+    margin-bottom: 5rem   
+ .section-title--word
+   &::after
+     display: none
  .types
  .card
   margin-bottom: 4.91rem
@@ -36,9 +49,21 @@
     bottom: -1.5rem
  .col-30
   flex-basis: 32%
-
 @media screen and ( max-width: 760px )
-  .hero
+ .projects-slide
+  &__image
+  margin-top: 2.25rem   
+  &__text 
+   flex-basis: 45%
+   margin-top: 0
+   margin-bottom: 1rem
+   padding: 0
+   &:nth-child(2)
+     margin-right: 0
+   &:nth-child(1), &:nth-child(3)
+     margin-right: 2rem
+   &:nth-child(3), &:nth-child(4)
+    margin-bottom: 5rem   
 @media screen and ( max-width: 570px )
  .contacts 
   &__phone
@@ -69,36 +94,44 @@
      margin-bottom: 1.85rem
      font-size: 1.08rem
      line-height: 1.25rem
+ .projects 
  .row
   flex-direction: column 
   align-items: center
  .col-50
-   width: 90%
+   width: 100%
  .projects-title
    &__heading
-     font-size: 1.83rem
-     line-height: 138.6%
-     margin-bottom: 1.83rem
+    font-size: 1.83rem
+    line-height: 138.6%
+    margin-bottom: 1.83rem
    &__text
      font-size: 1.16rem
      line-height: 158.48%
-     margin-bottom: 3rem
-     max-width: 25rem
+     max-width: 25rem 
  .projects-slide
+  justify-content: start
+  align-items: flex-start
+  &__image
+  margin-top: 2.25rem
   &__text 
-   flex-basis: 50%
-   margin-right: 2.58rem
+   flex-basis: 38%
    margin-top: 0
+   margin-bottom: 1rem
+   padding: 0
+   &:nth-child(2)
+     margin-right: 0
+   &:nth-child(1), &:nth-child(3)
+     margin-right: 3.3rem
    &:nth-child(3), &:nth-child(4)
     margin-bottom: 5rem
   &__heading
     font-size: 1.16rem
     line-height: 138.6%
-    margin-bottom: 0.91rem
+    margin-bottom: 0.83rem
   &__value
-    margin-bottom: 2.25rem
-  &__image
-  margin-top: 2.91rem
+    font-size: 1.16rem
+    line-height: 1.583rem
  .types
   &__heading
     font-size: 1.83rem

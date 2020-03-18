@@ -440,10 +440,10 @@ img {
       align-items: center; }
       .section-title--word::after {
         content: '';
-        width: 80px;
+        width: 90px;
         height: 2px;
         background-color: #E3B873;
-        margin-left: 2rem; }
+        margin-left: 2.6rem; }
     .section-title__text {
       font-size: 1.28rem;
       line-height: 2.07rem;
@@ -632,17 +632,18 @@ img {
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   font-size: 1.928rem;
-  line-height: 2.64rem;
+  line-height: 2.642rem;
+  letter-spacing: -0.07em;
   text-transform: uppercase;
-  margin-bottom: 2.42rem;
+  margin-bottom: 1.628rem;
   margin-top: -8px; }
 
 .projects-title__text {
   font-family: 'Futura Book', cursive;
   font-weight: normal;
   font-size: 1.285rem;
-  line-height: 2.071rem;
-  margin-bottom: 1rem; }
+  line-height: 2.0714rem;
+  margin-bottom: 0.8rem; }
 
 .projects-slide {
   display: flex;
@@ -650,12 +651,13 @@ img {
   .projects-slide__text {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    max-width: 12.14rem;
-    margin-right: 2.857rem;
-    margin-top: 1rem; }
+    flex-basis: 30%;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem; }
     .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
       margin-bottom: 5.07rem; }
+    .projects-slide__text:nth-child(2) {
+      margin-right: 65px; }
   .projects-slide__heading {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
@@ -667,13 +669,9 @@ img {
   .projects-slide__value {
     font-family: 'Futura Book', cursive;
     font-weight: normal;
-    font-size: 1.28rem;
+    font-size: 1.071rem;
     line-height: 1.428rem;
     color: #fff; }
-
-.swiper-slide {
-  display: flex;
-  flex-wrap: wrap; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
@@ -700,6 +698,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 8px; }
+
+.row-start {
+  align-items: flex-start; }
 
 .types__heading {
   font-family: 'Yeseva One', cursive;
@@ -908,8 +909,19 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
-  .projects-slide {
-    margin-top: 2rem; }
+  .projects-slide__text {
+    flex-basis: 38%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0; }
+    .projects-slide__text:nth-child(2) {
+      margin-right: 0; }
+    .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+      margin-right: 3.3rem; }
+    .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
+      margin-bottom: 5rem; }
+  .section-title--word::after {
+    display: none; }
   .card {
     margin-bottom: 4.91rem; }
     .card__text {
@@ -928,6 +940,19 @@ img {
       bottom: -1.5rem; }
   .col-30 {
     flex-basis: 32%; } }
+
+@media screen and (max-width: 760px) {
+  .projects-slide__text {
+    flex-basis: 45%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0; }
+    .projects-slide__text:nth-child(2) {
+      margin-right: 0; }
+    .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+      margin-right: 2rem; }
+    .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
+      margin-bottom: 5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -962,7 +987,7 @@ img {
     flex-direction: column;
     align-items: center; }
   .col-50 {
-    width: 90%; }
+    width: 100%; }
   .projects-title__heading {
     font-size: 1.83rem;
     line-height: 138.6%;
@@ -970,22 +995,29 @@ img {
   .projects-title__text {
     font-size: 1.16rem;
     line-height: 158.48%;
-    margin-bottom: 3rem;
     max-width: 25rem; }
   .projects-slide {
-    margin-top: 2.91rem; }
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 2.25rem; }
     .projects-slide__text {
-      flex-basis: 50%;
-      margin-right: 2.58rem;
-      margin-top: 0; }
+      flex-basis: 38%;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0; }
+      .projects-slide__text:nth-child(2) {
+        margin-right: 0; }
+      .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+        margin-right: 3.3rem; }
       .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
         margin-bottom: 5rem; }
     .projects-slide__heading {
       font-size: 1.16rem;
       line-height: 138.6%;
-      margin-bottom: 0.91rem; }
+      margin-bottom: 0.83rem; }
     .projects-slide__value {
-      margin-bottom: 2.25rem; }
+      font-size: 1.16rem;
+      line-height: 1.583rem; }
   .types__heading {
     font-size: 1.83rem;
     line-height: 138.6%; }
