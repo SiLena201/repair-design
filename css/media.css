@@ -2,7 +2,26 @@
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 0.98rem; } }
+    margin-right: 0.98rem; }
+  .types .card__text {
+    width: 80%;
+    margin-top: -12.2rem;
+    padding: 1.65rem 0 2.8rem 1.583rem; }
+  .types .card__pricetag {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 138.6%;
+    padding: 0.8rem 1.78rem;
+    bottom: -1.5rem; }
+  .design__text {
+    margin-top: -12.2rem;
+    padding: 1.5rem 3.41rem 3.24rem 2.583rem;
+    width: 80%; }
+  .design__pricetag {
+    font-size: 1.25rem;
+    line-height: 138.6%;
+    padding: 0.916rem 3.25rem 0.66rem 2.73rem;
+    bottom: -1.6rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -45,17 +64,19 @@
     flex-basis: 32%; } }
 
 @media screen and (max-width: 760px) {
-  .projects-slide__text {
-    flex-basis: 45%;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 0; }
-    .projects-slide__text:nth-child(2) {
-      margin-right: 0; }
-    .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
-      margin-right: 2rem; }
-    .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
-      margin-bottom: 5rem; } }
+  .projects-slide {
+    margin-top: 2.25rem; }
+    .projects-slide__text {
+      flex-basis: 45%;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding: 0; }
+      .projects-slide__text:nth-child(2) {
+        margin-right: 0; }
+      .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
+        margin-right: 2rem; }
+      .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
+        margin-bottom: 5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -126,24 +147,25 @@
     line-height: 138.6%; }
   .types__image {
     margin-bottom: 3.3rem; }
-  .card {
+  .types .card {
     margin-bottom: 4.91rem; }
-    .card__image {
+    .types .card__image {
       min-width: 340px; }
-    .card__text {
+    .types .card__text {
+      min-width: 270px;
       width: 79%;
       margin-left: 0;
       margin-top: -12.2rem;
       padding: 1.65rem 0 2.8rem 2.583rem; }
-    .card__title {
+    .types .card__title {
       font-size: 1.25rem;
       line-height: 138.6%;
       margin-bottom: 0.43rem; }
-    .card__list {
+    .types .card__list {
       font-size: 1.083rem;
       line-height: 169.8%;
-      margin-left: -2.2rem; }
-    .card__pricetag {
+      padding-left: 1rem; }
+    .types .card__pricetag {
       display: block;
       font-size: 1.25rem;
       line-height: 138.6%;
@@ -163,8 +185,9 @@
     .design__card {
       min-width: 340px; }
     .design__text {
+      margin: 0;
       margin-top: -12.2rem;
-      padding: 1.5rem 3.41rem 3.24rem 2.583rem;
+      padding: 1.5rem 0 3.24rem 2.583rem;
       width: 79%; }
     .design__title {
       font-size: 1.25rem;
@@ -173,7 +196,7 @@
     .design__list {
       font-size: 1.083rem;
       line-height: 169.8%;
-      padding-left: 1rem; }
+      padding-left: -0.4rem; }
     .design__pricetag {
       font-size: 1.25rem;
       line-height: 138.6%;
