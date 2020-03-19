@@ -1,7 +1,8 @@
 .work
  &__margin
-  padding-top: 440px
+  padding-top: 580px
  &-title
+  margin-top: -93px
   &__subtitle
     display: block
     font-family: 'Futura PT Demi', cursive
@@ -19,6 +20,7 @@
     line-height: 2.642rem
     text-transform: uppercase
     margin-bottom: 5rem
+    color: $primary
   &--word
    display: flex
    align-items: center
@@ -29,6 +31,7 @@
     background-color: $primary
     margin-left: 6.3rem
 .work-slide
+ padding: 0
  &__heading
    font-family: 'Yeseva One', cursive
    font-weight: normal 
@@ -54,30 +57,52 @@
    font-size: 1.071rem
    line-height: 1.785rem
    color: $light
-   margin-bottom: 5.185rem
+   margin-bottom: 7.185rem
    margin-top: -0.4rem
    &--margin
     margin-bottom: 1.2rem
+   &--width
+     max-width: 20.8rem
  .work
   &-slide
    display: flex
-   flex-direction: column
+   flex-wrap: wrap
+   margin-top: -43px
   &-row
    display: flex
-   flex-wrap: wrap
+   flex-direction: column
+   flex-basis: 100%
+   max-width: 765px
+   max-height: 583px
+   height: 100%
+   overflow: hidden
   &-col
-   flex-basis: 33%
    color: $light
+   &__line
+     display: flex
+     justify-content: space-between
+     align-items: center
+     &--margin
+       margin-bottom: 2rem
    &__number
     font-family: 'Yeseva One', cursive
     font-weight: normal 
     font-size: 1.071rem
     line-height: 1.5rem
     text-transform: uppercase
+    margin-bottom: -0.24rem
    &__value
     font-family: 'Futura Book', cursive
     font-weight: normal 
     font-size: 1.071rem
     line-height: 1.285rem
+    margin-bottom: 1.471rem
     &--word
      display: block
+  &__image
+    width: 100%
+ .row-center
+   border-right: 40px solid $dark
+   border-left: 20px solid $dark
+
+

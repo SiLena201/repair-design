@@ -37,19 +37,28 @@ $(document).ready(function () {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
+    
+  })
+  var mySwiper = new Swiper('.swiper-container-2', {
+    loop: true,
+    allowTouchMove: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
   })
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() +10 +bullets.width() +10)
-  bullets.css('left', prev.width() +10)
+  next.css('left', next.width() +20 +bullets.width() +20)
+  bullets.css('left', prev.width() +20)
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination__bullets');
-
-  next.css('left', prev.width() + 25 + next.width() + 25)
-  bullets.css('left', bullets.width() + 25)
+  
 });
