@@ -81,4 +81,16 @@ $(document).ready(function () {
   bullets.css('left', prev.width() +20)
 
   new WOW().init();
+
+
+
+
+
+
+
+
+  
+  // маска для номера телефона
+  $('input[name=userPhone]').mask('+7 (000) 00-00-000', {placeholder: "+7 (000) 000-00-00"});
+
 });

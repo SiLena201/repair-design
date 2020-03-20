@@ -353,6 +353,10 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   padding: 0.5rem 0; }
+  .input:focus {
+    outline: none; }
+  .input.invalid {
+    border-bottom: 1px solid tomato; }
 
 .policy__checkbox {
   opacity: 0;
@@ -366,9 +370,8 @@ template {
   align-items: center;
   font-family: 'Futura Book', cursive;
   font-weight: normal;
-  font-size: 1.14rem;
-  line-height: 1.57rem;
-  color: #fff; }
+  font-size: 1.142rem;
+  line-height: 1.57rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -377,6 +380,12 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
+
+.invalid {
+  color: tomato;
+  margin-top: 0.5rem; }
 
 .container {
   max-width: 1256px;
@@ -759,13 +768,12 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 52rem;
+    max-width: 56rem;
     margin: auto; }
   .control__policy {
     flex-basis: 100%;
     margin-top: 1.2rem; }
     .control__policy--label {
-      color: #131313;
       justify-content: center; }
   .control__input {
     background-color: transparent;
@@ -774,8 +782,8 @@ img {
     font-size: 1.285rem;
     padding: 0.3rem 0;
     min-width: 16.4rem;
-    color: #131313;
     display: flex;
+    align-items: space-between;
     flex-direction: column;
     flex-basis: 30%; }
   .control__button {
@@ -922,38 +930,39 @@ img {
   display: flex;
   justify-content: space-between; }
 
-.work__margin {
-  padding-top: 580px; }
-
-.work-title {
-  margin-top: -93px; }
-  .work-title__subtitle {
-    display: block;
-    font-family: 'Futura PT Demi', cursive;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.071rem;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 1.1rem; }
-  .work-title__heading {
-    font-family: 'Yeseva One', cursive;
-    font-weight: normal;
-    font-size: 1.928rem;
-    line-height: 2.642rem;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-    color: #E3B873; }
-  .work-title--word {
-    display: flex;
-    align-items: center; }
-    .work-title--word::after {
-      content: '';
-      width: 90px;
-      height: 2px;
-      background-color: #E3B873;
-      margin-left: 6.3rem; }
+.work {
+  padding-bottom: 30rem; }
+  .work__margin {
+    padding-top: 580px; }
+  .work-title {
+    margin-top: -93px; }
+    .work-title__subtitle {
+      display: block;
+      font-family: 'Futura PT Demi', cursive;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.071rem;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.1rem; }
+    .work-title__heading {
+      font-family: 'Yeseva One', cursive;
+      font-weight: normal;
+      font-size: 1.928rem;
+      line-height: 2.642rem;
+      text-transform: uppercase;
+      margin-bottom: 5rem;
+      color: #E3B873; }
+    .work-title--word {
+      display: flex;
+      align-items: center; }
+      .work-title--word::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 6.3rem; }
 
 .work-slide {
   padding: 0; }
@@ -1029,6 +1038,54 @@ img {
     border-right: 40px solid #131313;
     border-left: 20px solid #131313; }
 
+.footer {
+  padding-top: 3rem;
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer__wrap {
+    margin-top: -20rem;
+    background: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-bottom: 3.714rem;
+    padding-top: 0.8rem;
+    padding-bottom: 2.4rem; }
+  .footer__title {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    text-transform: uppercase; }
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.2rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.5rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
+
+.invalid {
+  color: tomato; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -1042,7 +1099,8 @@ img {
   background-color: rgba(19, 19, 19, 0.6);
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #fff; }
   .modal--visible {
     opacity: 1;
     visibility: visible; }
@@ -1050,8 +1108,7 @@ img {
     position: relative;
     max-width: 36.36rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.28rem 3.6rem;
-    color: #fff; }
+    padding: 2.28rem 3.6rem; }
   .modal__close {
     position: absolute;
     right: 0;
@@ -1073,22 +1130,13 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__label {
+  .modal--light {
     color: rgba(255, 255, 255, 0.5); }
-  .modal__input {
-    margin-bottom: 3.428rem;
-    color: #fff; }
-    .modal__input::-webkit-input-placeholder {
-      color: #fff; }
-    .modal__input::-moz-placeholder {
-      color: #fff; }
-    .modal__input:-ms-input-placeholder {
-      color: #fff; }
-    .modal__input::-ms-input-placeholder {
-      color: #fff; }
-    .modal__input::placeholder {
-      color: #fff; }
-    .modal__input:last-of-type {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.428rem; }
+    .modal__input-group:last-of-type {
       margin-bottom: 0; }
   .modal__policy {
     margin-bottom: 2.7rem; }
@@ -1100,6 +1148,9 @@ img {
     line-height: 1.285rem;
     text-transform: uppercase;
     padding: 1.157rem 3.3rem 1.157rem 3.3rem; }
+
+.placeholder {
+  color: #fff; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1247,6 +1298,26 @@ img {
     .projects-slide__value {
       font-size: 1.16rem;
       line-height: 1.583rem; }
+  .control {
+    max-width: 28.33rem; }
+    .control-title__heading {
+      font-size: 1.83rem;
+      line-height: 138.6%; }
+    .control__video {
+      max-height: 207px;
+      margin-bottom: 2.33rem; }
+      .control__video::before {
+        margin-bottom: 3.83rem; }
+    .control__text {
+      font-size: 1.16rem;
+      line-height: 169.8%;
+      max-width: 340px;
+      width: 100%;
+      margin-bottom: 2.16rem; }
+    .control__form {
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 15px; }
   .types__heading {
     font-size: 1.83rem;
     line-height: 138.6%; }
@@ -1312,7 +1383,47 @@ img {
   .card__item {
     margin-bottom: 0.1rem; }
     .card__item--none {
-      display: none; } }
+      display: none; }
+  .footer {
+    background: #252525; }
+    .footer__wrap {
+      margin-top: 105rem;
+      max-width: 28.33rem;
+      width: 100%;
+      min-height: 480px;
+      height: 100%;
+      background: #252525; }
+    .footer__title {
+      font-size: 1.66rem;
+      line-height: 2.33rem;
+      margin-bottom: 4.33rem; }
+    .footer__form {
+      max-width: 28.33rem;
+      flex-direction: column;
+      align-items: flex-start; }
+    .footer__input {
+      font-size: 1.25rem; }
+    .footer--dark {
+      color: #ffffff; }
+    .footer__input {
+      color: #ffffff;
+      flex-basis: 100%;
+      margin-bottom: 1.8rem; }
+    .footer__policy {
+      flex-basis: 100%;
+      margin-bottom: 2.5rem; }
+    .footer__button {
+      display: block;
+      width: 100%;
+      font-size: 1.25rem;
+      line-height: 1.5rem; }
+  .label {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.5); }
+  .input {
+    min-width: 340px;
+    border-bottom: 2px solid rgba(54, 54, 54, 0.3);
+    font-size: 1.485rem; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__content {

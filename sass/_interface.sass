@@ -24,13 +24,17 @@
  &--outline:hover
   background-color: rgba($dark, 0.4)
 .label
- font-size: 1.07rem
+  font-size: 1.07rem
 .input 
  background-color: transparent
  border: none
  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
  font-size: 1.285rem
  padding: 0.5rem 0
+ &:focus
+   outline: none
+ &.invalid
+   border-bottom: 1px solid tomato
 .policy
    &__checkbox
     opacity: 0
@@ -45,9 +49,8 @@
      align-items: center
      font-family: 'Futura Book', cursive
      font-weight: normal
-     font-size: 1.14rem
+     font-size: 1.142rem
      line-height: 1.57rem
-     color: $light
      &::before
        content: ''
        width: 18px
@@ -56,6 +59,11 @@
        border-radius: 1px 
        cursor: pointer
        margin-right: 0.64rem
+     &--center
+       justify-content: center
+.invalid 
+  color: tomato
+  margin-top: 0.5rem
 
 
   
