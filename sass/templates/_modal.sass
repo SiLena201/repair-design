@@ -43,8 +43,14 @@
  &__form
    display: flex
    flex-direction: column
+ &__label
+  &--light
+  color: rgba($light, 0.5)
  &__input
   margin-bottom: 3.428rem
+  color: $light
+  &::placeholder
+   color: $light
   &:last-of-type
    margin-bottom: 0
  &__policy

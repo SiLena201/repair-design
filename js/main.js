@@ -14,6 +14,7 @@
  
 });
 */
+
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
@@ -25,7 +26,26 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   }); 
-  
+
+  $(document).ready(function(){
+    $('.modal--visible').hide();
+    $('.modal').click(function(){
+        $('.modal--visible').show();
+    });
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27)
+            $('.modal--visible').hide();
+    });
+  });
+
+  $(document).mouseup(function (e) {
+    var modal = $('.modal');
+    if (e.target!=modal[0]&&modal.has(e.target).length === 0) {
+      $('.modal--visible').hide();
+    }
+    
+  });
+
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     allowTouchMove: false,
@@ -60,5 +80,5 @@ $(document).ready(function () {
   next.css('left', next.width() +20 +bullets.width() +20)
   bullets.css('left', prev.width() +20)
 
-  
+  new WOW().init();
 });

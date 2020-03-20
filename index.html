@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/style.css">
  <title>Repair-design</title>
 </head>
@@ -24,7 +25,7 @@
  
   <div class="contacts menu__contacts">
    <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-   <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+   <button class="button contacts__button button--primary" href="#modal" data-toggle="modal">Заказать звонок</button>
   </div>
  </div>
 </div>
@@ -36,12 +37,16 @@
   </div>
  <div class="container">
   <div class="hero__content">
-   <h1 class="title hero__title">турецкий ремонт
+   <h1 class="title hero__title wow fadeInUp" data-wow-delay="1s">турецкий ремонт
    в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-   <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет
+   <p class="hero__text wow fadeInUp" data-wow-delay="2s">Получите готовый ремонт под ключ в срок с экономией рабочего
+     времени до 45 дней и
+     20% от стоимости материалов за счет
    организации работы</p>
- <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
- <button class="button hero__button hero__button--outline button--outline">Отправить заявку</button>
+ <button class="button hero__button button--primary wow fadeInUp" data-wow-delay="3s" href="#modal--visible"
+   data-toggle="modal">Рассчитать стоимость</button>
+ <button class="button hero__button hero__button--outline button--outline wow fadeInUp" data-wow-delay="3s">Отправить
+   заявку</button>
   </div>
   <a href="#" class="hero__scroll-down">Листайте вниз</a>
  </div>
@@ -52,7 +57,9 @@
 <div class="row row-start">
   <div class="col-50">
     <div class="section-title--left">
-      <h2 class="section-title__heading--primary projects-title__heading section-title__heading--margin">Завершенные <span class="section-title--word">проекты</span></h2>
+      <h2
+        class="section-title__heading--primary projects-title__heading section-title__heading--margin">
+        Завершенные <span class="section-title--word">проекты</span></h2>
       <!-- /.section-title__heading -->
       <p class="section-title__text projects-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14
         лет работы на строительном рынке
@@ -196,23 +203,47 @@
 
 <section class="section control">
   <div class="container">
-    <div class="section-title">
-      <h2 class="section-title__heading">Онлайн контроль</h2>
+    <div class="section-title control__section-title section-title--light">
+      <h2 class="section-title__heading control-title__heading wow fadeInLeftBig" data-wow-delay="0.5s">Виды ремонта</h2>
       <!-- /.section-title__heading -->
-      <div class="section-title__image">
-        <img class="img-fluid" src="img/video.svg" alt="video">
+      <div class="section-title__image control-title__image">
+        <img class="" src="img/repair.svg" alt="repair">
       </div>
-      <!-- /.section-title__image -->
     </div>
-    <!-- /.section-title -->
+    <div class="control__video video">
+      <img src="../img/videobg.jpg" alt="play" class="play video__play">
+    </div>
+    <!-- /.control__video video -->
+    <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш
+    сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте
+    заявку ниже чтобы получить ссылку на трансляцию.</p>
   </div>
+  <form action="#" id="modal" class="form control__form">
+
+<div class="control__input-group">
+  <label for="user-name" class="label control__label form__label">Имя</label>
+ <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+</div>
+
+<div class="control__input-group">
+<label for="user-phone" class="label control__label form__label">Телефон</label>
+<input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+</div>
+
+   <button class="button button--primary control__button">Отправить</button>
+ <div class="policy control__policy">
+   <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+   <label for="policy-checkbox" class="policy__label control__policy--label">Я соглашаюсь с обработкой данных</label>
+   </div> 
+  </form>
+  <!-- /.form modal__form -->
 </section>
 <!-- /.section control -->
 
 <section class="section types">
   <div class="container">
     <div class="section-title types__title">
-    <h2 class="section-title__heading types__heading">Виды ремонта</h2>
+    <h2 class="section-title__heading types__heading wow fadeInLeftBig" data-wow-delay="1s">Виды ремонта</h2>
     <!-- /.section-title__heading -->
     <div class="section-title__image types__image">
     <img class="img-fluid" src="img/repair.svg" alt="repair">
@@ -322,7 +353,8 @@
 <section class="section design design__img">
   <div class="container">
     <div class="section-title design-section__title">
-      <h2 class="section-title__heading design-section__heading">Дизайн проект</h2>
+      <h2 class="section-title__heading design-section__heading wow fadeInLeftBig" data-wow-delay="1s">Дизайн проект
+      </h2>
       <!-- /.section-title__heading -->
       <div class="section-title__image design-section__image">
         <img class="img-fluid" src="img/design.svg" alt="design">
@@ -828,17 +860,17 @@
 </section>
 <!-- /.section section--dark projects -->
 
-<div class="modal">
+<div class="modal" id="modal--visible">
   <div class="modal__dialog">
     <button class="modal__close"></button>
     <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
     <!-- /.modal__title -->
-    <form action="#" class="form modal__form">
+    <form action="#" id="modal" class="form modal__form">
       <label for="user-name" class="label form__label label--light">Имя</label>
       <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
-      <label for="user-phone" class="label form__label label--light">Телефон</label>
+      <label for="user-phone" class="label form__label nodal__label--light">Телефон</label>
       <input type="tel" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
-      <label for="user-email" class="label form__label label--light">Email</label>
+      <label for="user-email" class="label form__label nodal__label--light">Email</label>
       <input type="email" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
       <div class="policy modal__policy">
         <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
@@ -855,6 +887,7 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
