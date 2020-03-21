@@ -1107,7 +1107,7 @@ img {
   .footer__tel {
     color: #E3B873;
     list-style: none;
-    text-decoration: none; }
+    text-transform: none; }
 
 .socials__icon {
   width: 2rem;

@@ -83,8 +83,9 @@ $(document).ready(function () {
   new WOW().init();
 
   $(".modal__form").validate({
-    errorClass: "invalid",
-    rules: {
+   errorClass:  "invalid",
+    errorElement: "modal__input-group",
+   rules: {
       // Строчное правило
       userName: {
         required: true,
