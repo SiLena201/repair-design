@@ -157,26 +157,47 @@
     font-size: 1.16rem
     line-height: 1.583rem
  .control
-   max-width: 28.33rem
+   background: #131313 
    &-title
      &__heading
        font-size: 1.83rem
        line-height: 138.6%
    &__video
-     max-height: 207px
+     min-height: 207px
      margin-bottom: 2.33rem
+     max-width: 330px
      &::before
       margin-bottom: 3.83rem 
    &__text 
      font-size: 1.16rem
      line-height: 169.8%
-     max-width: 340px
      width: 100%
      margin-bottom: 2.16rem
+     min-width: 28.33rem
+     margin-left: -1rem
+     color: #ffffff
    &__form
      flex-direction: column
      justify-content: center
-     margin-left: 15px
+     align-items: center
+     min-width: 330px
+     color: #ffffff
+   &__policy
+     &--label
+       min-width: 340px
+       justify-content: start
+       margin-top: -5.16rem
+   &__input 
+    color: #ffffff
+    &-group 
+      margin-bottom: 5.4rem
+   &__button
+     width: 90%
+     margin-top: 2.45rem
+     order: 4
+     font-size: 1.25rem
+     line-height: 2.16rem
+     padding: 1rem 0
  .types
   &__heading
     font-size: 1.83rem
@@ -271,10 +292,13 @@
      color: #ffffff
      &-group
      flex-basis: 100%
-     margin-bottom: 1.8rem
+     margin-bottom: 2rem
    &__policy
     flex-basis: 100%
-    margin-bottom: 2.5rem
+    margin-bottom: 4.8rem
+   &__label
+     &-start 
+       margin-top: -3rem
    &__button 
      display: block
      width: 100%

@@ -82,14 +82,41 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        phone: true
+      },
+      // правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
 
-
-
-
-
-
-
-  
   // маска для номера телефона
   $('input[name=userPhone]').mask('+7 (000) 00-00-000', {placeholder: "+7 (000) 000-00-00"});
 
