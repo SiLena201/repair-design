@@ -1048,7 +1048,7 @@ img {
     margin-left: auto;
     background: #181818;
     max-width: 63.07rem;
-    margin-bottom: 6.714rem;
+    margin-bottom: 3.714rem;
     padding-top: 0.8rem;
     padding-bottom: 2.4rem; }
   .footer__title {
@@ -1084,6 +1084,43 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    max-width: 66.071rem;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 4rem; }
+  .footer__links {
+    max-width: 34.071rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0 auto;
+    margin-bottom: 1.6rem; }
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.071rem; }
+  .footer__tel {
+    color: #E3B873;
+    list-style: none;
+    text-decoration: none; }
+
+.socials__icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: auto;
+  margin-right: 1.071rem; }
+
+.socials__icon--1 {
+  background: #E3B873 url("../img/letter-icon.svg") no-repeat center; }
+
+.socials__icon--2 {
+  background: #E3B873 url("../img/footer-icon.svg") no-repeat center; }
 
 .invalid {
   color: tomato; }
