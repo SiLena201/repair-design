@@ -218,16 +218,16 @@
     сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте
     заявку ниже чтобы получить ссылку на трансляцию.</p>
   </div>
-  <form action="#" id="modal" class="form control__form">
+  <form action="send.php" method="POST" id="modal" class="form control__form">
 
 <div class="control__input-group">
   <label for="user-name" class="label control__label label--grey">Имя</label>
- <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+ <input type="text" name="userName" class="input input--dark light form__input control__input" id="user-name" placeholder="Как вас зовут:">
 </div>
 
 <div class="control__input-group">
 <label for="user-phone" class="label control__label label--grey">Телефон</label>
-<input type="tel" class="input form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
+<input type="tel" name="userPhone" class="input input--dark light form__input control__input" id="user-phone" placeholder="Ваш номер телефона:">
 </div>
 
    <button class="button button--primary control__button">Отправить</button>
@@ -541,20 +541,20 @@
   <div class="contaider">
     <div class="footer__wrap footer__top">
     <h3 class="footer__title">Остались вопросы?</h3>
-      <form action="#" id="footer__form" class="form footer__form">
+      <form action="send.php" method="POST" id="footer__form" class="form footer__form">
       <div class="input-group footer__input-group">
         <label for="user-name" class="label form__label label--light">Имя</label>
-        <input type="text" name="userName" class="input form__input footer__input" id="userNick" placeholder="Как вас зовут:">   
+        <input type="text" name="userName" class="input light form__input footer__input" id="userNick" placeholder="Как вас зовут:">   
       </div>
 
         <div class="input-group footer__input-group">
-       <label for="user-phone" class="label form__label footer__label--light label--light">Телефон</label>
-       <input type="tel" name="userPhone" class="input form__input footer__input" id="userPhone" placeholder="Ваш номер телефона:">
+       <label for="user-phone" class="label form__label label--light">Телефон</label>
+       <input type="tel" name="userPhone" class="input light form__input footer__input" id="userPhone" placeholder="Ваш номер телефона:">
         </div>
 
         <div class="input-group footer__input-group footer__input-group--full-width">
-          <label for="user-question" class="label form__label footer__label--light label--light">Вопрос</label>
-        <input type="text" name="userQuestion" class="input form__input footer__input" id="userQuestion" placeholder="Я хочу спросить:">
+          <label for="user-question" class="label form__label label--light">Вопрос</label>
+        <input type="text" name="userQuestion" class="input light form__input footer__input" id="userQuestion" placeholder="Я хочу спросить:">
         </div>
 
         <div class="policy footer__policy">
@@ -607,20 +607,20 @@
     <button class="modal__close"></button>
     <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
     <!-- /.modal__title -->
-    <form action="#" id="modal" class="form modal__form window">
+    <form action="send.php" method="POST" id="modal" class="form modal__form window">
       <div class="input-group modal__input-group" id="modal__input">
        <label for="user-name" class="label form__label label--light modal--light">Имя</label>
        <input type="text" name="userName" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут:">
       </div>
 
       <div class="input-group modal__input-group input__group">
-     <label for="user-phone" class="label form__label label--light modal--light">Телефон</label>
-    <input type="tel" name="userPhone" class="input form__input modal__input placeholder" id="user-phone" placeholder="Ваш номер телефона:">
+     <label for="user-phone" class="label form__label label--light">Телефон</label>
+    <input type="tel" name="userPhone" class="input form__input modal__input" id="user-phone" placeholder="Ваш номер телефона:">
       </div>
 
       <div class="input-group modal__input-group">
-    <label for="user-email" class="label form__label label--light modal--light">Email</label>
-    <input type="email" name="userEmail" class="input form__input modal__input placeholder" id="user-email" placeholder="Ваш email">
+    <label for="user-email" class="label form__label label--light">Email</label>
+    <input type="email" name="userEmail" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
       </div>
 
       <div class="policy modal__policy">

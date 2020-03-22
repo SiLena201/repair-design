@@ -197,7 +197,7 @@
       font-size: 1.16rem;
       line-height: 1.583rem; }
   .control {
-    background: #131313; }
+    background: #252525; }
     .control-title__heading {
       font-size: 1.83rem;
       line-height: 138.6%; }
@@ -224,17 +224,7 @@
       min-width: 340px;
       justify-content: start;
       margin-top: -5.16rem; }
-    .control__input::-webkit-input-placeholder {
-      color: #ffffff; }
-    .control__input::-moz-placeholder {
-      color: #ffffff; }
-    .control__input:-ms-input-placeholder {
-      color: #ffffff; }
-    .control__input::-ms-input-placeholder {
-      color: #ffffff; }
-    .control__input::placeholder {
-      color: #ffffff; }
-    .control__input-group {
+    .control__policy-group {
       margin-bottom: 5.4rem; }
     .control__button {
       width: 90%;
@@ -243,6 +233,18 @@
       font-size: 1.25rem;
       line-height: 2.16rem;
       padding: 1rem 0; }
+  .light {
+    color: #ffffff; }
+    .light::-webkit-input-placeholder {
+      color: #ffffff; }
+    .light::-moz-placeholder {
+      color: #ffffff; }
+    .light:-ms-input-placeholder {
+      color: #ffffff; }
+    .light::-ms-input-placeholder {
+      color: #ffffff; }
+    .light::placeholder {
+      color: #ffffff; }
   .types__heading {
     font-size: 1.83rem;
     line-height: 138.6%; }
@@ -273,7 +275,7 @@
       padding: 0.8rem 2.78rem;
       bottom: -1.5rem; }
   .design {
-    background-color: #131313;
+    background-color: #252525;
     color: #ffffff; }
     .design-section__heading {
       font-size: 1.83rem;
@@ -309,10 +311,16 @@
     margin-bottom: 0.1rem; }
     .card__item--none {
       display: none; }
+  .team {
+    padding-top: 100rem;
+    padding-bottom: 5rem;
+    background-color: #252525; }
+    .team__title {
+      color: #ffffff; }
   .footer {
     background: #252525; }
     .footer__wrap {
-      margin-top: 105rem;
+      margin-top: 40rem;
       max-width: 28.33rem;
       width: 100%;
       min-height: 480px;
@@ -323,7 +331,7 @@
       line-height: 2.33rem;
       margin-bottom: 4.33rem; }
     .footer__form {
-      max-width: 28.33rem;
+      min-width: 28.33rem;
       flex-direction: column;
       align-items: flex-start; }
     .footer__input {
@@ -346,7 +354,44 @@
   .input {
     min-width: 340px;
     border-bottom: 2px solid rgba(54, 54, 54, 0.3);
-    font-size: 1.485rem; } }
+    font-size: 1.485rem; }
+  .footer__wrap {
+    min-width: 340px;
+    background-color: #252525;
+    margin-top: -8rem; }
+  .footer__form {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 340px;
+    width: 100%;
+    background-color: #252525;
+    color: #ffffff; }
+  .footer__title {
+    font-family: 'Yeseva One', cursive; }
+  .footer__map {
+    min-width: 340px;
+    height: 60%;
+    margin-right: 5%;
+    margin-left: 5%;
+    order: 3; }
+  .footer__links {
+    min-width: 340px;
+    font-size: 0.116rem;
+    line-height: 2.33rem; }
+    .footer__links--title {
+      margin-bottom: 4.33rem; }
+  .light {
+    color: #ffffff; }
+    .light::-webkit-input-placeholder {
+      color: #ffffff; }
+    .light::-moz-placeholder {
+      color: #ffffff; }
+    .light:-ms-input-placeholder {
+      color: #ffffff; }
+    .light::-ms-input-placeholder {
+      color: #ffffff; }
+    .light::placeholder {
+      color: #ffffff; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__content {
