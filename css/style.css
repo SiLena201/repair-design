@@ -346,6 +346,8 @@ template {
 
 .label {
   font-size: 1.07rem; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5); }
 
 .input {
   background-color: transparent;
@@ -354,6 +356,16 @@ template {
   font-size: 1.285rem;
   padding: 0.5rem 0;
   color: #fff; }
+  .input::-webkit-input-placeholder {
+    color: #fff; }
+  .input::-moz-placeholder {
+    color: #fff; }
+  .input:-ms-input-placeholder {
+    color: #fff; }
+  .input::-ms-input-placeholder {
+    color: #fff; }
+  .input::placeholder {
+    color: #fff; }
   .input:focus {
     outline: none; }
   .input.invalid {
@@ -787,6 +799,16 @@ img {
     align-items: space-between;
     flex-direction: column;
     flex-basis: 30%; }
+    .control__input::-webkit-input-placeholder {
+      color: #131313; }
+    .control__input::-moz-placeholder {
+      color: #131313; }
+    .control__input:-ms-input-placeholder {
+      color: #131313; }
+    .control__input::-ms-input-placeholder {
+      color: #131313; }
+    .control__input::placeholder {
+      color: #131313; }
   .control__button {
     padding: 1.2857rem 4.3857rem;
     font-size: 1.071rem; }
@@ -794,6 +816,9 @@ img {
 .video__play {
   position: block;
   margin: auto; }
+
+.label--grey {
+  color: rgba(54, 54, 54, 0.5); }
 
 .types__heading {
   font-family: 'Yeseva One', cursive;
@@ -859,7 +884,9 @@ img {
 
 .design {
   max-height: 520px;
-  background: #fff; }
+  background: #fff;
+  padding-top: -10rem;
+  padding-bottom: 60rem; }
   .design-section__heading {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
@@ -930,6 +957,43 @@ img {
 .row {
   display: flex;
   justify-content: space-between; }
+
+.team {
+  padding-top: 15rem;
+  padding-bottom: 13rem; }
+  .team__card--text {
+    max-width: 16.642rem;
+    padding: 1.571rem  1.428rem 4.857rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.428rem;
+    margin-top: -4.5rem; }
+  .team__card--title {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    text-align: center;
+    margin-bottom: 0.642rem; }
+  .team__card--value {
+    max-width: 23.2rem;
+    font-family: 'Futura Book', cursive;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.857rem;
+    color: #959595;
+    margin-bottom: 1.714rem; }
+  .team__card--button {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 0.928rem;
+    line-height: 1.428rem;
+    background-color: #E3B873;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.928rem 1.642rem;
+    border: none; }
 
 .work {
   padding-bottom: 25rem; }
@@ -1138,8 +1202,7 @@ img {
   background-color: rgba(19, 19, 19, 0.6);
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #fff; }
+  align-items: center; }
   .modal--visible {
     opacity: 1;
     visibility: visible; }
@@ -1147,7 +1210,8 @@ img {
     position: relative;
     max-width: 36.36rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.28rem 3.6rem; }
+    padding: 2.28rem 3.6rem;
+    color: #fff; }
   .modal__close {
     position: absolute;
     right: 0;
@@ -1169,17 +1233,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal--light {
-    color: rgba(255, 255, 255, 0.5); }
-  .modal__input {
-    color: #fff;
-    color: #fff; }
-    .modal__input-group {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 3.428rem; }
-      .modal__input-group:last-of-type {
-        margin-bottom: 0; }
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.428rem; }
+    .modal__input-group:last-of-type {
+      margin-bottom: 0; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -1190,9 +1249,6 @@ img {
     line-height: 1.285rem;
     text-transform: uppercase;
     padding: 1.157rem 3.3rem 1.157rem 3.3rem; }
-
-.placeholder {
-  color: #fff; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1274,7 +1330,59 @@ img {
       .projects-slide__text:nth-child(1), .projects-slide__text:nth-child(3) {
         margin-right: 2rem; }
       .projects-slide__text:nth-child(3), .projects-slide__text:nth-child(4) {
-        margin-bottom: 5rem; } }
+        margin-bottom: 5rem; }
+  .control {
+    background: #131313; }
+    .control-title__heading {
+      font-size: 1.83rem;
+      line-height: 138.6%; }
+    .control__video {
+      min-height: 207px;
+      margin-bottom: 2.33rem;
+      min-width: 28rem;
+      width: 80%; }
+      .control__video::before {
+        margin-bottom: 3.83rem; }
+    .control__text {
+      font-size: 1.16rem;
+      line-height: 169.8%;
+      width: 80%;
+      margin-bottom: 2.16rem;
+      min-width: 25.33rem;
+      color: #ffffff; }
+    .control__form {
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 50%;
+      min-width: 380px;
+      color: #ffffff;
+      margin: auto; }
+    .control__policy--label {
+      min-width: 30rem;
+      justify-content: start;
+      margin-top: -5.16rem; }
+    .control__input {
+      min-width: 30rem;
+      align-self: flex-start; }
+      .control__input::-webkit-input-placeholder {
+        color: #ffffff; }
+      .control__input::-moz-placeholder {
+        color: #ffffff; }
+      .control__input:-ms-input-placeholder {
+        color: #ffffff; }
+      .control__input::-ms-input-placeholder {
+        color: #ffffff; }
+      .control__input::placeholder {
+        color: #ffffff; }
+      .control__input-group {
+        margin-bottom: 5.4rem; }
+    .control__button {
+      width: 40%;
+      margin-top: 2.45rem;
+      order: 4;
+      font-size: 1.25rem;
+      line-height: 2.16rem;
+      padding: 1rem 0; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1354,10 +1462,9 @@ img {
     .control__text {
       font-size: 1.16rem;
       line-height: 169.8%;
-      width: 100%;
       margin-bottom: 2.16rem;
-      min-width: 28.33rem;
-      margin-left: -1rem;
+      max-width: 30.33rem;
+      width: 100%;
       color: #ffffff; }
     .control__form {
       flex-direction: column;
@@ -1369,10 +1476,18 @@ img {
       min-width: 340px;
       justify-content: start;
       margin-top: -5.16rem; }
-    .control__input {
+    .control__input::-webkit-input-placeholder {
       color: #ffffff; }
-      .control__input-group {
-        margin-bottom: 5.4rem; }
+    .control__input::-moz-placeholder {
+      color: #ffffff; }
+    .control__input:-ms-input-placeholder {
+      color: #ffffff; }
+    .control__input::-ms-input-placeholder {
+      color: #ffffff; }
+    .control__input::placeholder {
+      color: #ffffff; }
+    .control__input-group {
+      margin-bottom: 5.4rem; }
     .control__button {
       width: 90%;
       margin-top: 2.45rem;
@@ -1464,11 +1579,7 @@ img {
       flex-direction: column;
       align-items: flex-start; }
     .footer__input {
-      font-size: 1.25rem; }
-    .footer--dark {
-      color: #ffffff; }
-    .footer__input {
-      color: #ffffff;
+      font-size: 1.25rem;
       flex-basis: 100%;
       margin-bottom: 2rem; }
     .footer__policy {

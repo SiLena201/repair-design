@@ -25,6 +25,8 @@
   background-color: rgba($dark, 0.4)
 .label
   font-size: 1.07rem
+  &--light 
+   color: rgba($light, 0.5)
 .input 
  background-color: transparent
  border: none
@@ -32,6 +34,8 @@
  font-size: 1.285rem
  padding: 0.5rem 0
  color: $light
+ &::placeholder 
+   color: $light
  &:focus
    outline: none
  &.invalid
@@ -62,7 +66,7 @@
        margin-right: 0.64rem
      &--center
        justify-content: center
-. 
+.invalid 
   color: tomato
   margin-top: 0.5rem
 

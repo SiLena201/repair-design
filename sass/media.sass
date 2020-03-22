@@ -88,6 +88,52 @@
      margin-right: 2rem
    &:nth-child(3), &:nth-child(4)
     margin-bottom: 5rem   
+ .control
+   background: #131313 
+   &-title
+     &__heading
+       font-size: 1.83rem
+       line-height: 138.6%
+   &__video
+     min-height: 207px
+     margin-bottom: 2.33rem
+     min-width: 28rem
+     width: 80%
+     &::before
+      margin-bottom: 3.83rem 
+   &__text 
+     font-size: 1.16rem
+     line-height: 169.8%
+     width: 80%
+     margin-bottom: 2.16rem
+     min-width: 25.33rem
+     color: #ffffff
+   &__form
+     flex-direction: column
+     align-items: center
+     flex-basis: 50%
+     min-width: 380px
+     color: #ffffff
+     margin: auto
+   &__policy
+     &--label
+      min-width: 30rem
+      justify-content: start
+      margin-top: -5.16rem
+   &__input
+     min-width: 30rem
+     align-self: flex-start
+     &::placeholder 
+      color: #ffffff
+     &-group 
+       margin-bottom: 5.4rem
+   &__button
+     width: 40%
+     margin-top: 2.45rem
+     order: 4
+     font-size: 1.25rem
+     line-height: 2.16rem
+     padding: 1rem 0
 @media screen and ( max-width: 570px )
  .contacts 
   &__phone
@@ -171,10 +217,9 @@
    &__text 
      font-size: 1.16rem
      line-height: 169.8%
-     width: 100%
      margin-bottom: 2.16rem
-     min-width: 28.33rem
-     margin-left: -1rem
+     max-width: 30.33rem
+     width: 100%
      color: #ffffff
    &__form
      flex-direction: column
@@ -184,13 +229,14 @@
      color: #ffffff
    &__policy
      &--label
-       min-width: 340px
-       justify-content: start
-       margin-top: -5.16rem
-   &__input 
-    color: #ffffff
-    &-group 
-      margin-bottom: 5.4rem
+      min-width: 340px
+      justify-content: start
+      margin-top: -5.16rem
+   &__input
+     &::placeholder 
+      color: #ffffff
+     &-group 
+       margin-bottom: 5.4rem
    &__button
      width: 90%
      margin-top: 2.45rem
@@ -284,12 +330,7 @@
      flex-direction: column
      align-items: flex-start
    &__input 
-     font-size: 1.25rem
-   &--dark
-     color: #ffffff  
-   &__input
-     &::placecholder
-     color: #ffffff
+     font-size: 1.25rem 
      &-group
      flex-basis: 100%
      margin-bottom: 2rem
