@@ -279,7 +279,8 @@
       bottom: -1.5rem; }
   .design {
     background-color: #252525;
-    color: #ffffff; }
+    color: #ffffff;
+    padding-bottom: 10rem; }
     .design-section__heading {
       font-size: 1.83rem;
       line-height: 138.6%;
@@ -323,7 +324,7 @@
   .footer {
     background: #252525; }
     .footer__wrap {
-      margin-top: 40rem;
+      margin-top: -12rem;
       max-width: 28.33rem;
       width: 100%;
       min-height: 480px;
@@ -361,8 +362,7 @@
     font-size: 1.485rem; }
   .footer__wrap {
     min-width: 340px;
-    background-color: #252525;
-    margin-top: -8rem; }
+    background-color: #252525; }
   .footer__form {
     flex-direction: column;
     align-items: flex-start;
