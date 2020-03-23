@@ -119,6 +119,76 @@ $(document).ready(function () {
   });
 
   // маска для номера телефона
-  $('input[name=userPhone]').mask('+7 (000) 00-00-000', {placeholder: "+7 (000) 000-00-00"});
+  $('input[name=userPhone]').mask('+7 (000) 000-00-00', { placeholder: "+7 (000) 000-00-00" });
+
+  $(".control__form").validate({
+    errorClass: "invalid",
+    errorElement: "control__input-group",
+    rules: {
+      // Строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        phone: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+      }
+    }
+  });
+
+  // маска для номера телефона
+  $('input[name=userPhone]').mask('+7 (000) 000-00-00', { placeholder: "+7 (000) 000-00-00" });
+
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    errorElement: "footer__input-group",
+    rules: {
+      // Строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        phone: true
+      },
+      // правило-объект (блок)
+      userQuestion: {
+        required: false,
+        question: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+      },
+      userQuestion: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+
+  // маска для номера телефона
+  $('input[name=userPhone]').mask('+7 (000) 000-00-00', {placeholder: "+7 (000) 000-00-00"});
 
 });
+
