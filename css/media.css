@@ -200,7 +200,8 @@
     background: #252525; }
     .control-title__heading {
       font-size: 1.83rem;
-      line-height: 138.6%; }
+      line-height: 138.6%;
+      margin-bottom: 2.25rem; }
     .control__video {
       min-height: 207px;
       margin-bottom: 2.33rem;
@@ -225,10 +226,11 @@
       justify-content: start;
       margin-top: -5.16rem; }
     .control__policy-group {
-      margin-bottom: 5.4rem; }
+      margin-bottom: 5.1rem; }
     .control__button {
       width: 90%;
       margin-top: 2.45rem;
+      margin-bottom: -7rem;
       order: 4;
       font-size: 1.25rem;
       line-height: 2.16rem;
