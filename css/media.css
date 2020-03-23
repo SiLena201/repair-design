@@ -206,7 +206,8 @@
       min-height: 207px;
       margin-bottom: 2.33rem;
       max-width: 330px; }
-      .control__video::before {
+      .control__video::after {
+        background-size: 25%;
         margin-bottom: 3.83rem; }
     .control__text {
       font-size: 1.16rem;
@@ -327,11 +328,12 @@
       width: 100%;
       min-height: 480px;
       height: 100%;
-      background: #252525; }
+      background: #252525;
+      margin-bottom: 1.4rem; }
     .footer__title {
-      font-size: 1.66rem;
-      line-height: 2.33rem;
-      margin-bottom: 4.33rem; }
+      font-size: 20px;
+      line-height: 15px;
+      margin-bottom: 4.93rem; }
     .footer__form {
       min-width: 28.33rem;
       flex-direction: column;
@@ -342,7 +344,7 @@
       margin-bottom: 2rem; }
     .footer__policy {
       flex-basis: 100%;
-      margin-bottom: 4.8rem; }
+      margin-bottom: 3.4rem; }
     .footer__label-start {
       margin-top: -3rem; }
     .footer__button {
@@ -370,30 +372,42 @@
     color: #ffffff; }
   .footer__title {
     font-family: 'Yeseva One', cursive; }
+  .footer__block {
+    display: flex;
+    flex-direction: column-reverse; }
   .footer__map {
     min-width: 340px;
-    height: 60%;
-    margin-right: 5%;
-    margin-left: 5%;
-    order: 3; }
+    min-height: 255px;
+    margin-bottom: 3.416rem; }
   .footer__links {
-    min-width: 340px;
-    font-size: 0.116rem;
-    line-height: 2.33rem; }
+    max-width: 27rem;
+    font-size: 1.5rem;
+    line-height: 138.6%;
+    margin: 0 auto; }
     .footer__links--title {
-      margin-bottom: 4.33rem; }
+      margin-bottom: 4.33rem;
+      margin-bottom: 1.916rem; }
+  .socials {
+    margin-bottom: 3.16rem;
+    align-items: center; }
+    .socials__icon {
+      width: 3.25rem;
+      height: 3.25rem;
+      background-size: 60%; }
+      .socials__icon--2 {
+        margin-left: 0.6rem; }
   .light {
     color: #ffffff; }
     .light::-webkit-input-placeholder {
-      color: #ffffff; }
+      color: #a79b9b; }
     .light::-moz-placeholder {
-      color: #ffffff; }
+      color: #a79b9b; }
     .light:-ms-input-placeholder {
-      color: #ffffff; }
+      color: #a79b9b; }
     .light::-ms-input-placeholder {
-      color: #ffffff; }
+      color: #a79b9b; }
     .light::placeholder {
-      color: #ffffff; } }
+      color: #a79b9b; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__content {
