@@ -762,11 +762,11 @@ img {
       background-repeat: no-repeat;
       background-position: center; }
   .control__text {
-    max-width: 40.785rem;
+    max-width: 39.785rem;
     margin: auto;
     text-align: center;
     font-size: 1.4285rem;
-    line-height: 2.1425rem;
+    line-height: 2.442rem;
     margin-bottom: 4.357rem; }
     .control__text::before {
       content: '';
@@ -833,6 +833,9 @@ img {
 
 .policy__label--start {
   justify-content: center; }
+
+.policy__label--dark::before {
+  border: 1px solid rgba(54, 54, 54, 0.5); }
 
 .types__heading {
   font-family: 'Yeseva One', cursive;
@@ -1167,7 +1170,7 @@ img {
     padding: 4.285rem 0; }
   .footer__map {
     max-width: 66.071rem;
-    max-height: 465px;
+    min-height: 465px;
     margin: 0 auto;
     margin-top: 0;
     margin-bottom: 4rem; }
@@ -1647,7 +1650,9 @@ img {
     flex-direction: column-reverse; }
   .footer__map {
     min-width: 340px;
-    min-height: 255px;
+    width: 90%;
+    max-height: 255px;
+    margin: 0 auto;
     margin-bottom: 3.416rem; }
   .footer__links {
     max-width: 27rem;

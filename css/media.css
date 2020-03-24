@@ -377,7 +377,9 @@
     flex-direction: column-reverse; }
   .footer__map {
     min-width: 340px;
-    min-height: 255px;
+    width: 90%;
+    max-height: 255px;
+    margin: 0 auto;
     margin-bottom: 3.416rem; }
   .footer__links {
     max-width: 27rem;
