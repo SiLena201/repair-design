@@ -47,7 +47,9 @@
    &:checked +
     .policy__label
      &::before 
-      background: $primary url('/img/vector.svg') no-repeat center
+      background: $primary url('/img/vector.svg')
+      background-repeat: no-repeat
+      background-position: center
       z-index: 200 
       border: none
   &__label
@@ -57,8 +59,7 @@
     font-family: 'Futura Book', cursive
     font-weight: normal
     font-size: 16px
-    line-height: 22rem
-    max-height: 22px
+    line-height: 22px
     &::before
      content: ''
      width: 18px
