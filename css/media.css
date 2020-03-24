@@ -371,6 +371,8 @@
   .footer__block {
     display: flex;
     flex-direction: column-reverse; }
+  .footer__menu {
+    display: none; }
   .footer__map {
     min-width: 340px;
     width: 70%;
