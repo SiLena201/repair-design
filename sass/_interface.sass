@@ -25,9 +25,8 @@
   background-color: rgba($dark, 0.4)
 .label
   font-size: 1.07rem
-  &--light 
-   color: rgba($light, 0.5)
-.input 
+  color: rgba($light, 0.5) 
+.input  
   background-color: transparent
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
@@ -35,11 +34,12 @@
   padding: 0.5rem 0
   color: $light
   &::placeholder 
-    color: $light
+   color: $light
   &:focus
     outline: none
   &.invalid
     border-bottom: 1px solid tomato
+    color: tomato 
 .policy
   &__checkbox 
    opacity: 0
@@ -69,9 +69,5 @@
      border-radius: 1px 
      cursor: pointer
      margin-right: 0.64rem
-.invalid 
-  color: tomato
-  margin-top: 0.5rem
-
   
    

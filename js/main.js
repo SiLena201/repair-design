@@ -84,7 +84,7 @@ $(document).ready(function () {
 
   $(".modal__form").validate({
    errorClass:  "invalid",
-    errorElement: "modal__input-group",
+    errorElement: "div",
    rules: {
       // Строчное правило
       userName: {
@@ -119,11 +119,11 @@ $(document).ready(function () {
   });
 
   // маска для номера телефона
-  $('input[name=userPhone]').mask('+7 (000) 000-00-00', { placeholder: "+7 (000) 000-00-00" });
+  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "Ваш номер телефона" });
 
   $(".control__form").validate({
     errorClass: "invalid",
-    errorElement: "control__input-group",
+    errorElement: "div",
     rules: {
       // Строчное правило
       userName: {
@@ -147,13 +147,10 @@ $(document).ready(function () {
       }
     }
   });
-
-  // маска для номера телефона
-  $('input[name=userPhone]').mask('+7 (000) 000-00-00', { placeholder: "+7 (000) 000-00-00" });
 
   $(".footer__form").validate({
     errorClass: "invalid",
-    errorElement: "footer__input-group",
+    errorElement: "div",
     rules: {
       // Строчное правило
       userName: {
@@ -164,11 +161,6 @@ $(document).ready(function () {
       userPhone: {
         required: true,
         phone: true
-      },
-      // правило-объект (блок)
-      userQuestion: {
-        required: false,
-        question: true
       }
     },
     messages: {
@@ -179,16 +171,9 @@ $(document).ready(function () {
       },
       userPhone: {
         required: "Заполните поле",
-      },
-      userQuestion: {
-        required: "Заполните поле",
-        email: "Введите корректный email"
       }
     }
   });
-
-  // маска для номера телефона
-  $('input[name=userPhone]').mask('+7 (000) 000-00-00', {placeholder: "+7 (000) 000-00-00"});
 
 });
 

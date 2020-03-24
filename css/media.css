@@ -85,10 +85,10 @@
       font-size: 1.83rem;
       line-height: 138.6%; }
     .control__video {
-      min-height: 207px;
       margin-bottom: 2.33rem;
       min-width: 28rem;
-      width: 80%; }
+      width: 80%;
+      background-size: cover; }
       .control__video::before {
         margin-bottom: 3.83rem; }
     .control__text {
@@ -109,6 +109,8 @@
       min-width: 30rem;
       justify-content: start;
       margin-top: -5.16rem; }
+    .control__label {
+      font-size: 1.25rem; }
     .control__input {
       min-width: 30rem;
       align-self: flex-start; }
@@ -130,7 +132,11 @@
       order: 4;
       font-size: 1.25rem;
       line-height: 2.16rem;
-      padding: 1rem 0; } }
+      padding: 1rem 0; }
+  .label--grey {
+    color: rgba(255, 255, 255, 0.5); }
+  .footer__map {
+    width: 80%; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -204,10 +210,10 @@
       margin-bottom: 2.25rem; }
     .control__video {
       min-height: 207px;
+      background-size: cover;
       margin-bottom: 2.33rem;
       max-width: 330px; }
       .control__video::after {
-        background-size: 25%;
         margin-bottom: 3.83rem; }
     .control__text {
       font-size: 1.16rem;
@@ -236,18 +242,8 @@
       font-size: 1.25rem;
       line-height: 2.16rem;
       padding: 1rem 0; }
-  .light {
-    color: #ffffff; }
-    .light::-webkit-input-placeholder {
-      color: #ffffff; }
-    .light::-moz-placeholder {
-      color: #ffffff; }
-    .light:-ms-input-placeholder {
-      color: #ffffff; }
-    .light::-ms-input-placeholder {
-      color: #ffffff; }
-    .light::placeholder {
-      color: #ffffff; }
+  .video__play {
+    width: 30%; }
   .types__heading {
     font-size: 1.83rem;
     line-height: 138.6%; }
@@ -377,8 +373,9 @@
     flex-direction: column-reverse; }
   .footer__map {
     min-width: 340px;
-    width: 90%;
-    max-height: 255px;
+    width: 70%;
+    min-height: 255px;
+    height: 50%;
     margin: 0 auto;
     margin-bottom: 3.416rem; }
   .footer__links {
@@ -397,19 +394,7 @@
       height: 3.25rem;
       background-size: 60%; }
       .socials__icon--2 {
-        margin-left: 0.6rem; }
-  .light {
-    color: #ffffff; }
-    .light::-webkit-input-placeholder {
-      color: #a79b9b; }
-    .light::-moz-placeholder {
-      color: #a79b9b; }
-    .light:-ms-input-placeholder {
-      color: #a79b9b; }
-    .light::-ms-input-placeholder {
-      color: #a79b9b; }
-    .light::placeholder {
-      color: #a79b9b; } }
+        margin-left: 0.6rem; } }
 
 @media screen and (max-width: 520px), (max-height: 520px) {
   .hero__content {

@@ -95,10 +95,10 @@
        font-size: 1.83rem
        line-height: 138.6%
    &__video
-     min-height: 207px
      margin-bottom: 2.33rem
      min-width: 28rem
      width: 80%
+     background-size: cover 
      &::before
       margin-bottom: 3.83rem 
    &__text 
@@ -120,6 +120,8 @@
       min-width: 30rem
       justify-content: start
       margin-top: -5.16rem
+   &__label 
+     font-size: 1.25rem
    &__input
      min-width: 30rem
      align-self: flex-start
@@ -134,6 +136,11 @@
      font-size: 1.25rem
      line-height: 2.16rem
      padding: 1rem 0
+ .label--grey
+  color: rgba(#ffffff, 0.5)
+ .footer 
+   &__map 
+     width: 80%
 @media screen and ( max-width: 570px )
  .contacts 
   &__phone
@@ -211,10 +218,10 @@
        margin-bottom: 2.25rem
    &__video
      min-height: 207px
+     background-size: cover 
      margin-bottom: 2.33rem
      max-width: 330px
      &::after 
-      background-size: 25%
       margin-bottom: 3.83rem 
    &__text 
      font-size: 1.16rem
@@ -244,10 +251,9 @@
      font-size: 1.25rem
      line-height: 2.16rem
      padding: 1rem 0
- .light
-   color: #ffffff
-   &::placeholder 
-    color: #ffffff
+ .video 
+   &__play 
+    width: 30%
  .types
   &__heading
     font-size: 1.83rem
@@ -383,8 +389,9 @@
      flex-direction: column-reverse
    &__map  
      min-width: 340px
-     width: 90%
-     max-height: 255px
+     width: 70%
+     min-height: 255px
+     height: 50%
      margin: 0 auto 
      margin-bottom: 3.416rem
    &__links 
@@ -404,10 +411,6 @@
     background-size: 60%
     &--2
       margin-left: 0.6rem
- .light
-   color: #ffffff
-   &::placeholder 
-    color: rgb(167, 155, 155)
 @media screen and ( max-width: 520px ), ( max-height: 520px )
   .hero 
     &__content

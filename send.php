@@ -3,6 +3,7 @@
 $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
 $userPhone = $_POST['userPhone'];
+$userQuestion = $_POST['userQuestion'];
 
 // Load Composer's autoloader
 require 'phpmailer/PHPMailer.php';
