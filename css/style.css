@@ -369,7 +369,7 @@ template {
     outline: none; }
   .input.invalid {
     border-bottom: 1px solid tomato;
-    color: tomato; }
+    color: #fff; }
 
 .policy__checkbox {
   opacity: 0;
