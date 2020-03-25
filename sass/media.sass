@@ -222,40 +222,41 @@
      background-size: cover
      background-position: center 
      margin-bottom: 2.33rem
-     min-width: 320px
+     min-width: 270px
      &::after 
       margin-bottom: 3.83rem 
    &__text 
      font-size: 1.16rem
      line-height: 169.8%
-     margin-bottom: 2.16rem
-     max-width: 30.33rem
+     margin-bottom: 2.56rem
+     min-width: 280px
      width: 100%
      color: #ffffff
-   &__form
-     flex-direction: column
-     justify-content: center
-     align-items: center
-     min-width: 330px
-     color: #ffffff
-   &__policy
-     &--label
-      min-width: 340px
-      justify-content: start
-      margin-top: -5.16rem
+   &__form 
+     display: flex 
+     flex-direction: column 
+     align-items: flex-start 
+     justify-content: flex-start 
+     min-width: 280px
+     width: 90% 
+   &__input 
      &-group 
        margin-bottom: 5.1rem
-   &__button
-     width: 90%
-     margin-top: 2.45rem
-     margin-bottom: -7rem
-     order: 4
-     font-size: 1.25rem
-     line-height: 2.16rem
-     padding: 1rem 0
+   &__policy 
+     &--label 
+       margin-top: 
+   &__button 
+     width: 100%
+     margin-top: 2.95rem
  .video 
    &__play 
     width: 20%
+ .input--dark 
+  color: #ffffff
+  &::placeholder 
+    color: #ffffff
+ .input 
+   width: 200px
  .types
   &__heading
     font-size: 1.83rem
@@ -335,8 +336,8 @@
    background: #252525
    &__wrap
      margin-top: -12rem
-     max-width: 28.33rem
-     width: 100%
+     min-width: 280px 
+     width: 90%
      min-height: 480px
      height: 100%
      background: #252525
@@ -344,27 +345,24 @@
    &__title
      font-size: 20px
      line-height: 15px
-     margin-bottom: 4.93rem
+     margin-bottom: 4.83rem
    &__form 
-     min-width: 28.33rem
-     flex-direction: column
-     align-items: flex-start
+     flex-direction: column 
+     justify-content: flex-start 
+     align-items: flex-start 
    &__input 
-     font-size: 1.25rem 
-     &-group
-     flex-basis: 100%
-     margin-bottom: 2rem
-   &__policy
-    flex-basis: 100%
-    margin-bottom: 3.4rem
-   &__label
-     &-start 
-       margin-top: -3rem
+     margin-bottom: 1.95rem   
+   &--full-width 
+     margin-bottom: 4rem 
+   &__policy 
+     margin-top: -4.5rem
+     margin-bottom: 4.8rem
    &__button 
-     display: block
-     width: 100%
      font-size: 1.25rem
      line-height: 1.5rem
+     width: 100% 
+     padding: 1.305rem 0
+     margin: 0
  .label
    font-size: 1.15rem
    &--light
@@ -374,16 +372,6 @@
    border-bottom: 2px solid rgba(54, 54, 54, 0.3)
    font-size: 1.485rem
  .footer 
-   &__wrap 
-     min-width: 340px
-     background-color: #252525
-   &__form 
-     flex-direction: column 
-     align-items: flex-start
-     min-width: 340px
-     width: 100%
-     background-color: #252525
-     color: #ffffff
    &__title
      font-family: 'Yeseva One', cursive
    &__block 
@@ -392,14 +380,14 @@
    &__menu 
      display: none
    &__map  
-     min-width: 340px
-     width: 70%
+     width: 90%
      min-height: 255px
      height: 50%
      margin: 0 auto 
      margin-bottom: 3.416rem
    &__links 
-     max-width: 27rem
+     min-width: 280px 
+     width: 94% 
      font-size: 1.5rem
      line-height: 138.6%
      margin: 0 auto
@@ -414,7 +402,7 @@
     height: 3.25rem
     background-size: 60%
     &--2
-      margin-left: 0.6rem
+      margin-left: 0.6rem 
 @media screen and ( max-width: 520px ), ( max-height: 520px )
   .hero 
     &__content
