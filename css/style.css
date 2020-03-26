@@ -379,7 +379,7 @@ template {
     background-image: url("../img/Vector.svg");
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 200;
+    z-index: 90;
     border: none; }
 
 .policy__label {
