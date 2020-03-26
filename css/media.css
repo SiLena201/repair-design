@@ -366,6 +366,7 @@
     color: rgba(255, 255, 255, 0.5); }
   .input {
     min-width: 280px;
+    width: 100%;
     border-bottom: 2px solid rgba(54, 54, 54, 0.3);
     font-size: 1.485rem; }
   .footer__title {
