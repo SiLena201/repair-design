@@ -1,3 +1,4 @@
+
 # Created by https://www.gitignore.io/api/node,windows
 # Edit at https://www.gitignore.io/?templates=node,windows
 
@@ -37,6 +38,7 @@ bower_components
 
 # node-waf configuration
 .lock-wscript
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
