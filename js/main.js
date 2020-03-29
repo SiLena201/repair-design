@@ -57,21 +57,8 @@ $(document).ready(function () {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
-    
-  })
-  var mySwiper = new Swiper('.swiper-container-2', {
-    loop: true,
-    allowTouchMove: false,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
 
-  })
+  });
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
