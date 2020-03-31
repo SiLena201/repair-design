@@ -46,6 +46,30 @@ $(document).ready(function () {
     
   });
 
+  $(function() {
+ 
+    $(window).scroll(function() {
+     
+    if($(this).scrollTop() != 0) {
+     
+    $('#toTop').fadeIn();
+     
+    } else {
+     
+    $('#toTop').fadeOut();
+     
+    }
+     
+    });
+     
+    $('#toTop').click(function() {
+     
+    $('body,html').animate({scrollTop:0},1500);
+     
+    });
+     
+    });
+
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     allowTouchMove: false,
@@ -57,13 +81,13 @@ $(document).ready(function () {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
-
+  
   });
-
+  
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
-
+  
   next.css('left', next.width() +20 +bullets.width() +20)
   bullets.css('left', prev.width() +20)
 

@@ -51,3 +51,25 @@ img
   &__image
     width: 100%
     height: auto
+.toTop 
+ width: 160px
+ border: 1px solid $primary
+ background: $primary
+ text-align: center
+ padding: 10px 30px
+ position: fixed
+ bottom: 10px /* отступ кнопки от нижнего края страницы*/
+ right: 10px
+ cursor: pointer
+ display: none
+ color: $light
+ font-family: 'Futura Book', cursive
+ text-transform: uppercase
+ font-size: 1rem 
+ line-height: 138.6%
+ transition: all 0.3s
+ border-radius: 3px 
+ z-index: 5
+ &:hover 
+  background-color: transparent 
+  color: $primary

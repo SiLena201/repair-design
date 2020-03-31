@@ -35,7 +35,7 @@
     height: 2px
     background-color: $primary
     margin-left: 6.3rem
-.work-slide
+.work-slide 
  padding: 0
  &__heading
    font-family: 'Yeseva One', cursive
@@ -68,64 +68,44 @@
     margin-bottom: 1.2rem
    &--width
      max-width: 20.8rem
- .work
-  &-slide
-   display: flex 
-   flex-direction: column
-   margin-top: -43px
-  &-row
-   display: flex
-   flex-direction: column
-   flex-basis: 100%
-   max-width: 765px
-   max-height: 583px
-   height: 100%
-   overflow: hidden
-  &-col
+ &__image
+    width: 100%
+.work
+ &-row
+    display: flex
+    flex-direction: column
+    flex-basis: 100%
+    max-width: 765px
+    max-height: 583px
+    height: 100%
+    overflow: hidden
+ &-col
    color: $light
    &__line
      display: flex
      justify-content: space-between
      align-items: center
      &--margin
-       margin-bottom: 2rem
+      margin-bottom: 2rem
    &__number
     font-family: 'Yeseva One', cursive
-    font-weight: normal 
+    font-weight: normal
     font-size: 1.071rem
     line-height: 1.5rem
     text-transform: uppercase
     margin-bottom: -0.24rem
    &__value
     font-family: 'Futura Book', cursive
-    font-weight: normal 
+    font-weight: normal
     font-size: 1.071rem
     line-height: 1.285rem
     margin-bottom: 1.471rem
     &--word
      display: block
-  &__image
-    width: 100%
-.swiper-work
-  &__pagination
-   &__bullet
-    background-color: rgba($light, 0.3)
-    &-active
-     background-color: $light
-  &__button
-   &-prev, &-next
-    buttom: 0
-    top: auto
-    background-size: 42px
-    width: 42px
-    height: 14px
-    outline: none
-    &::after
-     display: none
-   &-prev
-    left: 0
-    background: url('../img/arrow-prev.svg') no-repeat center
-   &-next
-    background: url('../img/arrow-next.svg') no-repeat center
+.row-center
+  border-right: 40px solid $dark
+  border-left: 20px solid $dark
+
+
 
 

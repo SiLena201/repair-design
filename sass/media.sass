@@ -15,19 +15,22 @@
       font-size: 1.25rem
       line-height: 138.6%
       padding: 0.8rem 1.78rem
-      bottom: -1.5rem 
+      bottom: -1.5rem  
  .design
-  &__text 
+   &__text 
     margin-top: -12.2rem
     padding: 1.5rem 3.41rem 3.24rem 2.583rem
     width: 80%
-  &__pricetag 
+   &__pricetag 
     font-size: 1.25rem
     line-height: 138.6%
     padding: 0.916rem 3.25rem 0.66rem 2.73rem
     bottom: -1.6rem
  .work
    display: none
+ .footer 
+   &__wrap
+   padding-top: 50rem 
 @media screen and ( max-width: 992px )
  .nav 
   display: none
@@ -73,6 +76,11 @@
     bottom: -1.5rem
  .col-30
   flex-basis: 32%
+ .design 
+   padding-bottom: 85rem
+ .footer 
+   &__wrap 
+   padding-top: 120rem 
 @media screen and ( max-width: 760px )
  .projects-slide
   &__image
@@ -97,7 +105,7 @@
    &__video
      margin-bottom: 2.33rem
      min-width: 28rem
-     width: 80%
+     width: 80% 
      background-size: cover 
      &::before
       margin-bottom: 3.83rem 
@@ -138,9 +146,14 @@
      padding: 1rem 0
  .label--grey
   color: rgba(#ffffff, 0.5)
+ .video
+  &__play 
+  width: 30%
  .footer 
    &__map 
      width: 80%
+ .toTop 
+   width: 120px 
 @media screen and ( max-width: 570px )
  .contacts 
   &__phone
@@ -212,7 +225,6 @@
     line-height: 1.583rem
  .control
    background: #131313
-   min-width: 280px 
    &-title
      &__heading
        font-size: 1.83rem
@@ -223,33 +235,34 @@
      background-size: cover
      background-position: center 
      margin-bottom: 2.33rem
-     min-width: 270px
      &::after 
       margin-bottom: 3.83rem 
    &__text 
      font-size: 1.16rem
      line-height: 169.8%
      margin-bottom: 2.56rem
-     min-width: 270px
-     width: 100%
+     width: 90%
      color: #ffffff
    &__form 
      display: flex 
      flex-direction: column 
-     align-items: flex-start 
+     align-items: center 
      justify-content: flex-start 
-     min-width: 270px 
-     width: 80% 
    &__input 
-     min-width: 270px
+     border: 1px solid red 
+     min-width: 320px
      &-group 
-       margin-bottom: 5.1rem
-       width: 80%
+       margin-bottom: 5.1rem 
    &__policy 
+     border: 1px solid red 
+     min-width: 320px
      &--label 
        margin-top: -6rem 
+       border: 1px solid green 
+       min-width: 100%
    &__button 
-     width: 100%
+     width: 70%
+     margin: 0 auto 
      margin-top: 2.95rem
  .video 
    &__play 
@@ -337,7 +350,7 @@
  .footer
    background: #252525
    &__wrap
-     margin-top: -12rem
+     margin-top: 0
      min-width: 280px 
      width: 90%
      min-height: 480px
@@ -353,6 +366,8 @@
      justify-content: flex-start 
      align-items: flex-start 
    &__input 
+     min-width: 470px 
+     width: 100% 
      margin-bottom: 1.95rem   
    &--full-width 
      margin-bottom: 4rem 
@@ -362,21 +377,19 @@
    &__button 
      font-size: 1.25rem
      line-height: 1.5rem
-     width: 100% 
+     width: 70% 
      padding: 1.305rem 0
-     margin: 0
+     margin: 0 auto
  .label
    font-size: 1.15rem
    &--light
    color: rgba(#ffffff, 0.5)
  .input 
-   min-width: 280px
+   min-width: 320px
    width: 100% 
    border-bottom: 2px solid rgba(54, 54, 54, 0.3)
    font-size: 1.485rem
  .footer 
-   &__title
-     font-family: 'Yeseva One', cursive
    &__block 
      display: flex 
      flex-direction: column-reverse
@@ -412,8 +425,14 @@
       margin-left: 0
     &__scroll-down
       display: none
-
-  
- 
+@media screen and ( max-width: 365px )
+  .control 
+    min-width: 365px 
+    width: 100%  
+  .footer 
+    min-width: 365px 
+    width: 100% 
+    &__wrap 
+      margin-top: -30rem 
  
  

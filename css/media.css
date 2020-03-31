@@ -23,7 +23,9 @@
     padding: 0.916rem 3.25rem 0.66rem 2.73rem;
     bottom: -1.6rem; }
   .work {
-    display: none; } }
+    display: none; }
+  .footer {
+    padding-top: 50rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -63,7 +65,11 @@
     .card__pricetag {
       bottom: -1.5rem; }
   .col-30 {
-    flex-basis: 32%; } }
+    flex-basis: 32%; }
+  .design {
+    padding-bottom: 85rem; }
+  .footer {
+    padding-top: 120rem; } }
 
 @media screen and (max-width: 760px) {
   .projects-slide {
@@ -135,8 +141,12 @@
       padding: 1rem 0; }
   .label--grey {
     color: rgba(255, 255, 255, 0.5); }
+  .video {
+    width: 30%; }
   .footer__map {
-    width: 80%; } }
+    width: 80%; }
+  .toTop {
+    width: 120px; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -205,8 +215,7 @@
       font-size: 1.16rem;
       line-height: 1.583rem; }
   .control {
-    background: #131313;
-    min-width: 280px; }
+    background: #131313; }
     .control-title__heading {
       font-size: 1.83rem;
       line-height: 138.6%;
@@ -215,33 +224,35 @@
       min-height: 207px;
       background-size: cover;
       background-position: center;
-      margin-bottom: 2.33rem;
-      min-width: 270px; }
+      margin-bottom: 2.33rem; }
       .control__video::after {
         margin-bottom: 3.83rem; }
     .control__text {
       font-size: 1.16rem;
       line-height: 169.8%;
       margin-bottom: 2.56rem;
-      min-width: 270px;
-      width: 100%;
+      width: 90%;
       color: #ffffff; }
     .control__form {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      min-width: 270px;
-      width: 80%; }
+      align-items: center;
+      justify-content: flex-start; }
     .control__input {
-      min-width: 270px; }
+      border: 1px solid red;
+      min-width: 320px; }
       .control__input-group {
-        margin-bottom: 5.1rem;
-        width: 80%; }
-    .control__policy--label {
-      margin-top: -6rem; }
+        margin-bottom: 5.1rem; }
+    .control__policy {
+      border: 1px solid red;
+      min-width: 320px; }
+      .control__policy--label {
+        margin-top: -6rem;
+        border: 1px solid green;
+        min-width: 100%; }
     .control__button {
-      width: 100%;
+      width: 70%;
+      margin: 0 auto;
       margin-top: 2.95rem; }
   .video__play {
     width: 20%; }
@@ -333,7 +344,7 @@
   .footer {
     background: #252525; }
     .footer__wrap {
-      margin-top: -12rem;
+      margin-top: 0;
       min-width: 280px;
       width: 90%;
       min-height: 480px;
@@ -349,6 +360,8 @@
       justify-content: flex-start;
       align-items: flex-start; }
     .footer__input {
+      min-width: 470px;
+      width: 100%;
       margin-bottom: 1.95rem; }
     .footer--full-width {
       margin-bottom: 4rem; }
@@ -358,19 +371,17 @@
     .footer__button {
       font-size: 1.25rem;
       line-height: 1.5rem;
-      width: 100%;
+      width: 70%;
       padding: 1.305rem 0;
-      margin: 0; }
+      margin: 0 auto; }
   .label {
     font-size: 1.15rem;
     color: rgba(255, 255, 255, 0.5); }
   .input {
-    min-width: 280px;
+    min-width: 320px;
     width: 100%;
     border-bottom: 2px solid rgba(54, 54, 54, 0.3);
     font-size: 1.485rem; }
-  .footer__title {
-    font-family: 'Yeseva One', cursive; }
   .footer__block {
     display: flex;
     flex-direction: column-reverse; }
@@ -406,3 +417,13 @@
     margin-left: 0; }
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 365px) {
+  .control {
+    min-width: 365px;
+    width: 100%; }
+  .footer {
+    min-width: 365px;
+    width: 100%; }
+    .footer__wrap {
+      margin-top: -30rem; } }
