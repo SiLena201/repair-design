@@ -1105,8 +1105,7 @@ img {
   padding-top: -23rem;
   padding-bottom: 5rem;
   background-color: #131313;
-  max-height: 500px;
-  border-bottom: 1px solid red; }
+  max-height: 500px; }
   .team__description {
     max-width: 448px;
     margin-bottom: 5.285rem;
@@ -1419,6 +1418,13 @@ img {
     line-height: 1.285rem;
     text-transform: uppercase;
     padding: 1.157rem 3.3rem 1.157rem 3.3rem; }
+
+.subscribe {
+  position: fixed;
+  top: 35%;
+  left: 35%; }
+  .subscribe__button {
+    align-self: center; }
 
 @media screen and (max-width: 1200px) {
   html {

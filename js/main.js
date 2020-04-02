@@ -19,6 +19,7 @@ $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
+      subscribe = $('.subscribe');
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
@@ -126,6 +127,18 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена. Мы свяжемся с вами в течение 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
 
