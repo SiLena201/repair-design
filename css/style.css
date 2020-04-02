@@ -990,47 +990,9 @@ img {
   display: flex;
   justify-content: space-between; }
 
-.team {
-  padding-top: 15rem;
-  padding-bottom: 25rem;
-  background-color: #fff; }
-  .team__card--text {
-    max-width: 16.642rem;
-    padding: 1.571rem  1.428rem 4.857rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1.428rem;
-    margin-top: -4.5rem; }
-  .team__card--title {
-    font-family: 'Yeseva One', cursive;
-    font-weight: normal;
-    font-size: 1.285rem;
-    line-height: 1.785rem;
-    text-align: center;
-    margin-bottom: 0.642rem; }
-  .team__card--value {
-    max-width: 23.2rem;
-    font-family: 'Futura Book', cursive;
-    font-weight: normal;
-    font-size: 1.285rem;
-    line-height: 1.857rem;
-    color: #959595;
-    margin-bottom: 1.714rem; }
-  .team__card--button {
-    font-family: 'Yeseva One', cursive;
-    font-weight: normal;
-    font-size: 0.928rem;
-    line-height: 1.428rem;
-    background-color: #E3B873;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 0.928rem 1.642rem;
-    border: none; }
-
 .work {
   padding-top: 36rem;
-  padding-bottom: 25rem; }
+  padding-bottom: 1.64rem; }
   .work__margin {
     padding-top: 580px; }
   .work-title {
@@ -1138,6 +1100,161 @@ img {
 .row-center {
   border-right: 40px solid #131313;
   border-left: 20px solid #131313; }
+
+.team {
+  padding-top: -23rem;
+  padding-bottom: 5rem;
+  background-color: #131313;
+  max-height: 500px;
+  border-bottom: 1px solid red; }
+  .team__description {
+    max-width: 448px;
+    margin-bottom: 5.285rem;
+    font-family: 'Futura Book', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff; }
+  .team-row {
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap; }
+  .team__card--text {
+    max-width: 16.642rem;
+    max-height: 140px;
+    padding: 1.571rem  0 0.857rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.428rem;
+    margin-top: -6.1rem; }
+  .team__card--title {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.785rem;
+    text-align: center;
+    margin-bottom: 0.342rem;
+    color: #131313; }
+  .team__card--value {
+    max-width: 23.2rem;
+    font-family: 'Futura Book', cursive;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.857rem;
+    color: #959595;
+    margin-bottom: 1.414rem; }
+  .team__card--button {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 0.928rem;
+    line-height: 1.428rem;
+    background-color: #E3B873;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.928rem 1.642rem;
+    border: none;
+    width: 100%; }
+  .team__text {
+    font-family: 'Futura Book', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    max-width: 568px;
+    margin: 0 auto;
+    margin-top: 54px;
+    color: #131313; }
+    .team__text::before {
+      content: '';
+      width: 55px;
+      height: 2px;
+      background: #E3B873;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1.214rem; }
+  .team .card__image {
+    position: relative; }
+  .team .card--icon {
+    position: absolute;
+    top: -22.15rem;
+    left: -3.9rem;
+    width: 70px;
+    height: 70px;
+    background-color: #E3B873;
+    padding: 12px; }
+
+.customers {
+  padding-bottom: 30rem;
+  padding-top: 40rem;
+  background-color: #fff; }
+  .customers__description {
+    max-width: 360px;
+    font-family: 'Futura Book', cursive;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 1.928rem;
+    text-align: center;
+    margin-bottom: 2.714rem; }
+  .customers__card {
+    max-width: 376px;
+    max-height: 428px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Futura Book', cursive;
+    font-weight: normal;
+    font-size: 1.071rem;
+    line-height: 180%;
+    color: #959595;
+    margin-bottom: 2.571rem;
+    padding: 0 31px 80px 20px; }
+    .customers__card--avatar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+  .customers__buttons {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -3rem; }
+  .customers__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3B873;
+    max-width: 146px;
+    padding: 11px 18px;
+    border-right: 1px solid #fff; }
+    .customers__button--img {
+      margin-right: 0.971rem; }
+    .customers__button--span {
+      font-family: 'Yeseva One', cursive;
+      font-weight: normal;
+      font-size: 1.214rem;
+      line-height: 1.714rem;
+      text-transform: uppercase;
+      color: #fff; }
+  .customers__button2 {
+    max-width: 190px;
+    font-size: 1.214rem;
+    line-height: 1.714rem; }
+    .customers__button2--span {
+      text-transform: none; }
+
+.avatar__image {
+  margin-right: 15px; }
+
+.avatar__name {
+  margin-right: 10px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.285rem;
+  line-height: 1.642rem;
+  color: #131313; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -1329,8 +1446,28 @@ img {
     bottom: -1.6rem; }
   .work {
     display: none; }
+  .team {
+    padding-top: 34rem;
+    padding-bottom: 180rem; }
+    .team-row {
+      flex-direction: column;
+      align-items: center; }
+    .team__card {
+      margin-bottom: 5rem; }
+      .team__card--text {
+        margin: 0 3rem;
+        margin-top: -75px;
+        max-height: 121px; }
+    .team__text {
+      margin-top: 1rem;
+      color: #ffffff; }
+    .team .card--icon {
+      top: -26.5rem;
+      left: -5.4rem; }
+  .customers {
+    display: none; }
   .footer {
-    padding-top: 50rem; } }
+    padding-top: 3rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -1372,7 +1509,12 @@ img {
   .col-30 {
     flex-basis: 32%; }
   .design {
-    padding-bottom: 85rem; }
+    padding-bottom: 95rem; }
+  .team {
+    padding-top: 95rem; }
+    .team .card--icon {
+      top: -22.9rem;
+      left: -5.4rem; }
   .footer {
     padding-top: 120rem; } }
 
@@ -1448,6 +1590,30 @@ img {
     color: rgba(255, 255, 255, 0.5); }
   .video {
     width: 30%; }
+  .team {
+    padding-top: 95rem;
+    padding-bottom: 50rem;
+    background-color: #252525; }
+    .team__card {
+      margin-bottom: 7rem; }
+      .team__card--image {
+        min-width: 304px;
+        width: 100%; }
+        .team__card--image--title {
+          font-size: 2.9rem;
+          line-height: 3.28rem; }
+        .team__card--image--value {
+          font-size: 1.5rem;
+          line-height: 2.16rem; }
+      .team__card--text {
+        min-width: 233px;
+        margin: 0 auto;
+        margin-top: -125px; }
+    .team__text {
+      margin-top: -3rem; }
+    .team .card--icon {
+      top: -22.4rem;
+      left: -4.4rem; }
   .footer__map {
     width: 80%; }
   .toTop {
@@ -1641,11 +1807,29 @@ img {
     .card__item--none {
       display: none; }
   .team {
-    padding-top: 100rem;
-    padding-bottom: 5rem;
+    padding-top: 120rem;
+    padding-bottom: 37rem;
     background-color: #252525; }
-    .team__title {
-      color: #ffffff; }
+    .team__card {
+      margin-bottom: 7rem; }
+      .team__card--image {
+        min-width: 304px;
+        width: 100%; }
+        .team__card--image--title {
+          font-size: 2.9rem;
+          line-height: 3.28rem; }
+        .team__card--image--value {
+          font-size: 1.5rem;
+          line-height: 2.16rem; }
+      .team__card--text {
+        min-width: 233px;
+        margin: 0 auto;
+        margin-top: -125px; }
+    .team__text {
+      margin-top: -3rem; }
+    .team .card--icon {
+      top: -25.9rem;
+      left: -5.4rem; }
   .footer {
     background: #252525; }
     .footer__wrap {
