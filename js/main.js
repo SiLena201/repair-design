@@ -136,7 +136,7 @@ $(document).ready(function () {
       success: function (response) {
       alert('Форма отправлена. Мы свяжемся с вами в течение 10 миут');
       $(form)[0].reset();
-      modal.removeClass('.modal');
+      modal.removeClass('modal--visible');
       }
       });
       }
