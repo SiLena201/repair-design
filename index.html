@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/style.css">
 
+<!-- Yandex.Metrika counter --> 
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(61595455, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61595455" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
  <title>Repair-design</title>
 </head>
 <body>
@@ -17,11 +20,11 @@
   <div class="logo menu__logo">Repair Design Project</div>
   <nav class="nav menu__nav">
    <a href="#" class="nav__item">Главная</a>
-   <a href="#" class="nav__item">Проекты</a>
-   <a href="#" class="nav__item">Замер</a>
-   <a href="#" class="nav__item">Команда</a>
-   <a href="#" class="nav__item">Отзывы</a>
-   <a href="#" class="nav__item">Контакты</a>
+   <a href="#projects" class="nav__item">Проекты</a>
+   <a href="#work" class="nav__item">Замер</a>
+   <a href="#team" class="nav__item">Команда</a>
+   <a href="#customers" class="nav__item">Отзывы</a>
+   <a href="#contacts" class="nav__item">Контакты</a>
   </nav>
  
   <div class="contacts menu__contacts">
@@ -55,11 +58,10 @@
 
 <section class="section section--dark projects projects__margin">
   <div class="container">
-<div class="row row-start">
+<div class="row row-start" id="projects">
   <div class="col-50">
     <div class="section-title--left">
-      <h2
-        class="section-title__heading--primary projects-title__heading section-title__heading--margin">
+      <h2 class="section-title__heading--primary projects-title__heading section-title__heading--margin">
         Завершенные <span class="section-title--word">проекты</span></h2>
       <!-- /.section-title__heading -->
       <p class="section-title__text projects-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14
@@ -212,7 +214,7 @@
       </div>
     </div>
     <div class="control__video video">
-      <img src="img/play.svg" alt="play" class="video video__play">
+      <iframe width="100%" height="434" src="https://www.youtube.com/embed/RbGuRZlrMMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <!-- /.control__video video -->
     <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш
@@ -231,7 +233,7 @@
 <input type="tel" name="userPhone" class="input input--dark form__input control__input dark" id="control__user-phone" placeholder="Ваш номер телефона:">
 </div>
 
-<button class="button button--primary control__button">Отправить</button>
+<button class="button button--primary control__button" onclick="ym(61595455,'reachGoal','request-btn'); return true;">Отправить</button>
  <div class="policy control__policy">
    <input type="checkbox" name="policy-checkbox" id="control__policy-checkbox" class="policy__checkbox " checked>
    <label for="control__policy-checkbox" class="policy__label policy__label--start control__policy--label label__dark policy__label--dark">Я соглашаюсь с обработкой данных</label>
@@ -475,7 +477,7 @@
   <div class="container">
     <div class="row row-center">
       <div class="col-40 col-margin work-col">
-        <div class="section-title section-title--left work-title">
+        <div class="section-title section-title--left work-title" id="work">
           <h2 class="section-title__heading section-title__heading--primary work-title__heading--margin"><span class="work-title__subtitle">как мы работаем</span> 6 шагов
             <span class="section-title--word work-title--word">до цели</span></h2>
           <!-- /.section-title__heading -->
@@ -909,7 +911,7 @@
 </section>
 <!-- /.section section--dark work -->
 
-<section class="section section--dark team">
+<section class="section section--dark team" id="team">
   <div class="container">
   <div class="section-title team__title">
   <h2 class="section-title__heading team__heading wow fadeInLeftBig" data-wow-delay="1s">Наша команда</h2>
@@ -981,9 +983,9 @@
   </section>
   <!— /.section team —>
 
-<section class="section customers">
+<section class="section customers" >
   <div class="container">
-    <div class="section-title customers__title">
+    <div class="section-title customers__title" id="customers">
       <h2 class="section-title__heading customers__heading wow fadeInLeftBig" data-wow-delay="1s">Наши клиенты</h2>
       <!— /.section-title__heading —>
       <div class="section-title__image customers__image">
@@ -1081,7 +1083,7 @@
 </section>
 <!-- /.section customers -->
 
-<footer class="footer section--dark">
+<footer class="footer section--dark" id="contacts">
   <div class="contaider">
     <div class="footer__wrap footer__top">
     <h3 class="footer__title">Остались вопросы?</h3>
@@ -1185,8 +1187,7 @@
 </div>
 <!-- /.modal -->
 
-
-<div class="toTop" id="toTop">Наверх</div> <!-- /.scrollToTop -->
+<div onclick="ym(61595455,'reachGoal','toTop-btn')"; return true; class="toTop" id="toTop">Наверх</div> <!-- /.scrollToTop -->
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
