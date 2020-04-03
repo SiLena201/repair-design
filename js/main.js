@@ -127,18 +127,6 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-    },
-    submitHandler: function (form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          alert('Форма отправлена. Мы свяжемся с вами в течение 10 миут');
-          $(form)[0].reset();
-          modal.removeClass('modal--visible');
-         }
-      });
     }
   });
 
