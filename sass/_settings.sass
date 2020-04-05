@@ -52,24 +52,31 @@ img
     width: 100%
     height: auto
 .toTop 
- width: 160px
- border: 1px solid $primary
- background: $primary
- text-align: center
- padding: 10px 30px
- position: fixed
- bottom: 10px /* отступ кнопки от нижнего края страницы*/
- right: 10px
- cursor: pointer
- display: none
- color: $light
- font-family: 'Futura Book', cursive
- text-transform: uppercase
- font-size: 1rem 
- line-height: 138.6%
- transition: all 0.3s
- border-radius: 3px 
- z-index: 5
- &:hover 
-  background-color: transparent 
-  color: $primary
+  position: fixed
+  right: 10px 
+  bottom: 10px 
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: 'Yeseva One'
+  font-weight: normal
+  font-size: 0.857rem
+  line-height: 138.6%
+  background-color: $dark
+  text-transform: uppercase
+  text-decoration: none
+  color: $light
+  padding: 2.457rem 3.4rem 2.385rem 3.428rem
+  z-index: 5
+  transition: all 0.3s
+  &::after
+    content: ''
+    background: url('../img/arrow.svg') no-repeat  center
+    width: 22px
+    height: 22px 
+    font-family: 'Yeseva One'
+    border: 1px solid $primary
+    border-radius: 50%
+    margin-left: 0.857rem
+  &:hover  
+    color: $primary

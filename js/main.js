@@ -71,26 +71,37 @@ $(document).ready(function () {
      
     });
 
-  var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,
-    allowTouchMove: false,
-    pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    },
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
-  
-  });
-  
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
-  
-  next.css('left', next.width() +20 +bullets.width() +20)
-  bullets.css('left', prev.width() +20)
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      allowTouchMove: false,
+      pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      },
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+    
+    });
+    
+    var next = $('.swiper-button-next');
+    var prev = $('.swiper-button-prev');
+    var bullets = $('.swiper-pagination');
+    
+    next.css('left', next.width() +20 +bullets.width() +20)
+    bullets.css('left', prev.width() +20)
+
+    $(document).ready(function(){
+      $('.single-item').slick({
+        dots: false,
+        arrows: true,
+        centerMode: true,
+        cednterPadding: '40px',
+        variableWidth: true,
+        slidesToShow: 1
+      });
+    });
 
   new WOW().init();
 
@@ -127,6 +138,17 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена.');
+          console.log('AJAX сработал. Форма отправлена' + response);
+        }
+      });
     }
   });
 
@@ -186,6 +208,5 @@ $(document).ready(function () {
       }
     }
   });
-  
-});
 
+});
