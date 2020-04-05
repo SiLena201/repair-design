@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Yandex.Metrika counter --> 
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(61595455, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61595455" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+ <title>Repair-design</title>
+</head>
+<body>
+  
+<?php
+  include('nav.php');
+?>
+
+
+<section style="padding-top: 10rem; padding-bottom: 10rem;" class="section section--dark projects projects__margin">
+<div class="container">
+<div class="row row-start">
+  <div class="col-50">
+    <div class="section-title--left">
+      <h2 class="section-title__heading--primary projects-title__heading section-title__heading--margin">
+        Завершенные <span class="section-title--word">проекты</span></h2>
+      <!-- /.section-title__heading -->
+      <p class="section-title__text projects-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14
+        лет работы на строительном рынке
+        мы осчастливили более 1000 семей</p>
+      <!-- /.section-title__text -->
+      <!-- /.section-title__image -->
+    </div>
+    <!-- /.section-title -->
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide projects-slide">
+          <div class="swiper-slide__text projects-slide__text projects-slide__text--margin">
+            <h3 class="swiper-slide__heading projects-slide__heading">Город:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Площадь:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">81 м2</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Срок ремонта:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">3,5 месяца</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Стоимость:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">По запросу</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+        </div>
+
+        <div class="swiper-slide projects-slide">
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Город:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Площадь:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">81 м<sup>2</sup></span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Срок ремонта:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">3,5 месяца</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Стоимость:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">По запросу</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+        </div>
+
+        <div class="swiper-slide projects-slide">
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Город:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Площадь:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">81 м<sup>2</sup></span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Срок ремонта:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">3,5 месяца</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+          <div class="swiper-slide__text projects-slide__text">
+            <h3 class="swiper-slide__heading projects-slide__heading">Стоимость:</h3>
+            <!-- /.swiper-slide__title -->
+            <span class="swiper-slide__value projects-slide__value">По запросу</span>
+            <!-- /.swiper-slide__value -->
+          </div>
+          <!-- /.swiper-slide__text -->
+        </div>
+      </div>
+      <!-- If we need pagination -->
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <!-- /.col-50 -->
+  <div class="col-50">
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide projects-slide">
+      <img src="./img/projects/project-1.jpg" alt="Project-1" class="swiper-slide__image">
+    </div>
+    <div class="swiper-slide projects-slide">
+      <img src="./img/projects/project-2.png" alt="Project-2" class="swiper-slide__image">
+    </div>
+    <div class="swiper-slide projects-slide">
+      <img src="./img/projects/project-1.jpg" alt="Project-3" class="swiper-slide__image">
+    </div>
+</div>
+  </div>
+  <!-- /.col-50 -->
+</div>
+<!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.section section-dark projects -->
+
+<?php
+  include('footerMenu.php');
+?>
+
+<div onclick="ym(61595455,'reachGoal','toTop-btn')"; return true; class="toTop" id="toTop">Наверх</div> <!-- /.scrollToTop -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

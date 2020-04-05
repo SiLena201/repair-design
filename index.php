@@ -16,26 +16,10 @@
  <title>Repair-design</title>
 </head>
 <body>
-<header class="header">
-<div class="container">
- <div class="menu">
-  <div class="logo menu__logo">Repair Design Project</div>
-  <nav class="nav menu__nav">
-   <a href="#" class="nav__item">Главная</a>
-   <a href="#projects" class="nav__item">Проекты</a>
-   <a href="#work" class="nav__item">Замер</a>
-   <a href="#team" class="nav__item">Команда</a>
-   <a href="#customers" class="nav__item">Отзывы</a>
-   <a href="#contacts" class="nav__item">Контакты</a>
-  </nav>
- 
-  <div class="contacts menu__contacts">
-   <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-   <button class="button contacts__button button--primary" href="#modal" data-toggle="modal">Заказать звонок</button>
-  </div>
- </div>
-</div>
-</header>
+
+<?php
+  include('nav.php');
+?>
 
 <section class="hero">
   <div class="instagram hero__instagram">
@@ -985,75 +969,82 @@
 
 <section class="section section--dark team" id="team">
   <div class="container">
-  <div class="section-title team__title">
-  <h2 class="section-title__heading team__heading wow fadeInLeftBig" data-wow-delay="1s">Наша команда</h2>
-  <!— /.section-title__heading —>
-  <div class="section-title__image team__image">
-  <img class="img-fluid" src="img/team/team.svg" alt="team">
-  </div>
-  <p class="section-title__description team__description">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
-  <!— /.section-description team__description —>
-  </div>
+      
+   <div class="section-title team__title">
+     <h2 class="section-title__heading team__heading wow fadeInLeftBig" data-wow-delay="1s">Наша команда</h2>
+     <!— /.section-title__heading —>
+     <div class="section-title__image team__image">
+       <img class="img-fluid" src="img/team/team.svg" alt="team">
+     </div>
+     <p class="section-title__description team__description">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+     <!— /.section-description team__description —>
+   </div>
   
-  <div class="team-row">
-  <div class="col-29">
-  <div class="card team__card">
-  <img src="img/team/manager.png" alt="Проектный менеджер" class="card__image">
-  <div class="card__text team__card--text team--center">
-  <h3 class="card__title team__card--title">Алексей Колмаков</h3>
-  <!— /.card__title —>
-  <span class="card__value team__card--value">Проектный менеджер</span> <!— /.card__value —>
-  <button class="card__button team__card--button">ОПыт работы 8 лет</button>
-  <!— /.card__button —>
-  <img src="img/team/idea.svg" alt="idea" class="img card--icon">
-  </div>
-  <!— /.card__text —>
-  </div>
-  <!— /.card —>
-  </div>
-  <!— /.col —>
-  <div class="col-29 col-margin">
-  <div class="card team__card">
-  <img src="img/team/designer.png" alt="Проектный менеджер" class="team__card--image">
-  <div class="card__text team__card--text">
-  <h3 class="card__title team__card--title">Алиса Сухорукова</h3>
-  <!— /.card__title —>
-  <span class="card__value team__card--value">Дизайнер</span> <!— /.card__value —>
-  <button class="card__button team__card--button">ОПыт работы 6 лет</button>
-  <!— /.card__button —>
-  <img src="img/team/design.svg" alt="idea" class="img card--icon">
-  </div>
-  <!— /.card__text —>
-  </div>
-  <!— /.card —>
-  </div>
-  <!— /.col —>
-  <div class="col-29">
-  <div class="card team__card">
-  <img src="img/team/engineer.png" alt="Проектный менеджер" class="card__image">
-  <div class="card__text team__card--text">
-  <h3 class="card__title team__card--title">Давид Волынев</h3>
-  <!— /.card__title —>
-  <span class="card__value team__card--value">Бригадир</span> <!— /.card__value —>
-  <button class="card__button team__card--button">ОПыт работы 7 лет</button>
-  <!— /.card__button —>
-  <img src="img/team/portfolio.svg" alt="idea" class="img card--icon">
-  </div>
-  <!— /.card__text —>
-  </div>
-  <!— /.card —>
-  </div>
-  <!— /.col —>
-  </div>
-  <!— /.row —>
-  <p class="team__text">
+   <div class="team-row">
+
+    <div class="col-29">
+      <div class="card team__card">
+         <img src="img/team/manager.png" alt="Проектный менеджер" class="card__image">
+         <div class="card__text team__card--text team--center">
+           <h3 class="card__title team__card--title">Алексей Колмаков</h3>
+           <!— /.card__title —>
+           <span class="card__value team__card--value">Проектный менеджер</span> <!— /.card__value —>
+           <button class="card__button team__card--button">ОПыт работы 8 лет</button>
+           <!— /.card__button —>
+          <img src="img/team/idea.svg" alt="idea" class="img card--icon">
+        </div>
+        <!— /.card__text —>
+      </div>
+      <!— /.card —>
+    </div>
+    <!— /.col —>
+
+    <div class="col-29 col-margin">
+      <div class="card team__card">
+       <img src="img/team/designer.png" alt="Проектный менеджер" class="team__card--image">
+       <div class="card__text team__card--text">
+         <h3 class="card__title team__card--title">Алиса Сухорукова</h3>
+         <!— /.card__title —>
+         <span class="card__value team__card--value">Дизайнер</span> <!— /.card__value —>
+         <button class="card__button team__card--button">ОПыт работы 6 лет</button>
+         <!— /.card__button —>
+         <img src="img/team/design.svg" alt="idea" class="img card--icon">
+       </div>
+       <!— /.card__text —>
+     </div>
+     <!— /.card —>
+    </div>
+    <!— /.col —>
+
+    <div class="col-29">
+      <div class="card team__card">
+        <img src="img/team/engineer.png" alt="Проектный менеджер" class="card__image">
+        <div class="card__text team__card--text">
+          <h3 class="card__title team__card--title">Давид Волынев</h3>
+          <!— /.card__title —>
+          <span class="card__value team__card--value">Бригадир</span> <!— /.card__value —>
+          <button class="card__button team__card--button">ОПыт работы 7 лет</button>
+          <!— /.card__button —>
+          <img src="img/team/portfolio.svg" alt="idea" class="img card--icon">
+        </div>
+        <!— /.card__text —>
+      </div>
+      <!— /.card —>
+    </div>
+    <!— /.col —>
+
+   </div>
+   <!— /.row —>
+  
+   <p class="team__text">
     Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
-  </p>
-  <!-- /.section-title__description team-text -->
+   </p>
+   <!-- /.section-title__description team-text -->
   </div>
   <!— /.container —>
   </section>
-  <!— /.section team —>
+  <!— /.section team —>  
+
 
 <section class="section customers" >
   <div class="container">
@@ -1203,26 +1194,11 @@
 </div>
 <!-- /.footer__block -->
   </div>
-  <div class="footer__menu">
-    <div class="container">
-      <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
-        <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
-        </nav>
-      
-        <div class="contacts menu__contacts">
-          <a href="tel:+79069542715" class="phone contacts__phone">+7 (906) 954-27-15</a>
-          <button class="button contacts__button button--primary" href="#modal" data-toggle="modal">Заказать звонок</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <?php
+  include('footerMenu.php');
+?>
+
   <!-- /.contaider -->
 </footer>
 <!-- /.footer section section--dark -->
