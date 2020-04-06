@@ -514,6 +514,11 @@ img {
   .toTop:hover {
     color: #E3B873; }
 
+iframe {
+  width: 100%;
+  min-height: 465px;
+  height: 100%; }
+
 .header {
   position: fixed;
   top: 0;
