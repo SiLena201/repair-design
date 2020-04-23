@@ -514,6 +514,15 @@ img {
   .toTop:hover {
     color: #E3B873; }
 
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #E3B873;
+  z-index: 6; }
+
 iframe {
   width: 100%;
   min-height: 465px;
@@ -1220,7 +1229,17 @@ iframe {
     font-size: 1.071rem;
     line-height: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: -0.24rem; }
+    margin-bottom: -0.24rem;
+    cursor: pointer; }
+    .work-col__number:after {
+      content: '';
+      display: block;
+      height: 2px; }
+    .work-col__number:hover {
+      border-bottom: 1px solid #E3B873;
+      width: 20px;
+      transition: all 0.3s;
+      color: #E3B873; }
   .work-col__value {
     font-family: 'Futura Book', cursive;
     font-weight: normal;

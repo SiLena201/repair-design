@@ -94,6 +94,16 @@
     line-height: 1.5rem
     text-transform: uppercase
     margin-bottom: -0.24rem
+    cursor: pointer 
+    &:after 
+      content: '' 
+      display: block 
+      height: 2px 
+    &:hover 
+        border-bottom: 1px solid $primary 
+        width: 20px 
+        transition: all 0.3s 
+        color: $primary 
    &__value
     font-family: 'Futura Book', cursive
     font-weight: normal

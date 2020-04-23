@@ -15,6 +15,18 @@
 });
 */
 
+const progress = document.querySelector('.progress'); 
+
+window.addEventListener('scroll', progressBar);
+
+function progressBar(e) {
+  let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight; 
+  let per = windowScroll / windowHeight * 100;
+
+  progress.style.width = per + '%';
+}
+
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
@@ -63,6 +75,8 @@ $(document).ready(function () {
      
     });
      
+
+  
     $('#toTop').click(function() {
      
     $('body,html').animate({scrollTop:0},1500);

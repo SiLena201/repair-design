@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<div class="progress"></div>
+
 <?php
   include('nav.php');
 ?>
